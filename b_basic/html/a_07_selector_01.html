@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- a_07_selector_01.html-->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>웹기초</title>
+  <style>
+    body {background-color:#EEFFEE;}
+
+    h1 {
+      background-color:#F50;
+      color:#fff;
+    }
+
+    #baseSelector {
+      border-width:2px;
+      border-style:solid;
+      border-color:cadetblue;
+    }
+    
+    h2.select_title {
+      background-color:lightblue;
+      color:#FFF;
+    }
+
+    p.select_title {
+      color:#F60;
+    }
+
+    #makeBox {
+      width:400px; height:100px;
+    }
+
+    .one_box {
+      background-color:#AAA;
+    }
+
+    #moreSelector {
+      /*
+      border-width:3px;
+      border-style:dotted;
+      border-color:#f75;
+      */
+      border:3px dotted #f75;
+    }
+
+    /*
+    id의 이름을 작성할 경우 : camelCase로 작성
+    class의 이름을 작성할 경우 : underbar_type로 작성    
+    */
+
+  </style>
+</head>
+<body>
+  <h1>웹문서</h1>
+  <div id="baseSelector">
+    <h2 class="select_title">css 선택자</h2>
+    <p class="select_title">내용을 작성</p>
+    <div id="makeBox" class="one_box">하나의 박스를 생성</div>
+  </div>
+  <div id="moreSelector">
+    <h2 class="select_title">선택자 추가</h2>
+    <p>다양한 선택자를 추가</p>
+  </div>
+</body>
+</html>

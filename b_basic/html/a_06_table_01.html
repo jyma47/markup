@@ -26,6 +26,28 @@
    }
    thead {
     background-color:cadetblue;
+    color:white;
+   }
+
+   tbody {
+     background-color:lightcyan;
+   }
+
+   .line_impact {
+     background-color: lightskyblue;
+   }
+
+   .cell_01 {
+     width:80px;
+   }
+   .cell_02 {
+     width:100px;
+   }
+   /* .cell_03 {
+     width:170px;
+   } */
+   .cell_04 {
+     width:400px;
    }
 
   </style>
@@ -36,6 +58,16 @@
 
   <table>
     <caption>테이블 구조 기본 형태 이해하기</caption>
+
+    <colgroup>
+      <col class="cell_01">
+      <col class="cell_02" span="2">
+      <!-- <col class="cell_03"> -->
+      <col class="cell_04">
+      <col class="cell_05">
+    </colgroup>
+
+
     <thead>
       <tr>
         <th>ID no.</th>
@@ -46,20 +78,39 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th>001</th><td>Mark</td><td>Octo</td><td><a href="#">mark@email.com</a></td><td>02.04</td>
+      <tr class="line_impact">
+        <th>001</th>
+        <td>Mark</td>
+        <td>Octo</td>
+        <td><a href="#">mark@email.com</a></td>
+        <td>02.04</td>
       </tr>
       <tr>
-        <th>002</th><td>Json</td><td>Airdays</td><td><a href="#">json001@email.com</a></td><td>02.14</td>
+        <th>002</th>
+        <td>Json</td>
+        <td>Airdays</td>
+        <td><a href="#">json001@email.com</a></td>
+        <td>02.14</td>
+      </tr>
+      <tr class="line_impact">
+        <th>003</th>
+        <td>Larry</td>
+        <td>Visualy</td>
+        <td><a href="#">larry@email.com</a></td>
+        <td>03.02</td>
       </tr>
       <tr>
-        <th>003</th><td>Larry</td><td>Visualy</td><td><a href="#">larry@email.com</a></td><td>03.02</td>
+        <th>004</th>
+        <td>Gray</td>
+        <td>Bootlamp</td>
+        <td><a href="#">gray_color@email.com</a></td>
+        <td>04.01</td>
       </tr>
-      <tr>
-        <th>004</th><td>Gray</td><td>Bootlamp</td><td><a href="#">gray_color@email.com</a></td><td>04.01</td>
-      </tr>
-      <tr>
-        <th>005</th><td>Park</td><td>-</td><td><a href="#">green@email.com</a></td><td>05.01</td>
+      <tr class="line_impact">
+        <th>005</th><td>Park</td>
+        <td>-</td>
+        <td><a href="#">green@email.com</a></td>
+        <td>05.01</td>
       </tr>
     </tbody>
     

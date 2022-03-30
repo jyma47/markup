@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>웹기초</title>
+  <style>
+    body {background-color: #efefef;}
+    #wrap {
+      width:800px; height:auto;
+      margin:auto;
+      background-color: #0AF;
+    }
+
+    /*
+    ul > li {
+      margin:5px;
+      border:1px solid #333;
+      color:#f00;
+    }
+
+    ul li > a {
+      color:green;
+    }
+
+    ol > li {
+      background-color: #fa0;
+      margin-bottom:10px;
+    }
+    
+    */
+   
+
+    ul > li {
+      background-color: white;
+      margin-bottom: 10px;
+    }
+
+    .list {
+      background-color: #851;
+    }
+    
+    li {
+      background-color: salmon;
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1><a href="../index.html">웹표준</a></h1>
+    <h2>자손, 자식 선택자</h2>
+
+    <ul>
+      <li class="list">list 01</li>
+      <li>
+        <div>
+          <a href="#">list 02</a>
+        </div>
+        <ol>
+          <li><a href="#">sub list 01</a></li>
+          <li><a href="#">sub list 02</a></li>
+          <li><a href="#">sub list 03</a></li>
+          <li><a href="#">sub list 04</a></li>
+        </ol>
+      </li>
+      <li>list 03</li>
+      <li>list 04</li>
+    </ul>
+  </div>
+</body>
+</html>

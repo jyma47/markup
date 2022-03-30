@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- a_09_psuedo_code.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>웹기초</title>
+  <style>
+    #wrap {
+      width:100%; height:auto;
+      background-color: #EFEFEF;
+    }
+    /* 기본형 */
+    ul{
+      width:70%; height:auto;
+      background-color: #FDD;
+    }
+    li {
+      list-style:none;
+      width:250px; height:50px;
+      margin:10px;
+      background-color: #CCC;
+    }
+
+    .btn_01:hover {
+      background-color: #05A;
+      color:#FFF;
+      font-weight:bold;
+    }
+
+    .btn_01:active {
+      background-color: #FA0;
+    }
+
+    .btn_02:active {
+      box-shadow:0 0 10px #333 inset;
+    }
+
+    .btn_03 > a:focus {
+      color:#555;
+      font-size:1.5em;
+      font-weight:bold;
+    }
+
+    .btn_03 > a:visited {
+      color:#333;
+    }
+
+    .btn_04 > button:focus {
+      width:100%; height:100%;
+      border:3px solid #F07;
+    }
+
+    /* --------------- */
+    /* 가상요소 선택자 */
+
+    .before {
+      width:400px; height:auto;
+      background-color: #DAA;
+    }
+    .before:before, .before::before {
+      content:"내용의 앞부분에 가상의 존재가 생성";
+      color:#FFF;
+    }
+    .after {
+      width:400px; height:auto;
+      background-color: #DAD;
+    }
+    .after:after, .after::after{
+      content:"내용의 뒤에 가상의 존재 생성";
+      font-size:1.2em;
+    }
+    .both {
+      width:400px; height:auto;
+      background-color: #ADA;
+    }
+    .both:before, .both::before{
+      content:"앞에 내용 추가";
+      color:#F00;
+    }
+    .both:after, .both::after{
+      content: "뒤에 내용 추가";
+      color:#FFF;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1><a href="../index.html">웹표준이해</a></h1>
+    <hr />
+    <h2>의사전달코드 - 기본형</h2>
+    <ul>
+      <li class="btn_01">마우스를 올렸을 때</li>
+      <li class="btn_02">마우스로 버튼을 누를 때</li>
+      <li class="btn_03"><a href="#">방문한 적이 있는 형태</a></li>
+      <li class="btn_04"><button type="button">초점이 맞는 경우</button></li>
+    </ul>
+    <hr />
+    <h2>가상요소 선택자</h2>
+    <p class="before">내용이 보이고 있습니다.</p>
+    <p class="after">두번째 내용이 보이고 있습니다.</p>
+    <p class="both">세번째 내용이 보이고 있습니다.</p>
+
+  </div>
+</body>
+</html>

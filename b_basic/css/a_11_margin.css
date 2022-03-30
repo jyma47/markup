@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* a_11_margin.css */
+#wrap {
+  width:900px; height:3000px;
+  margin:auto;
+  background-color: #DDD;
+}
+
+.part {
+  width:95%; height:auto;
+  margin:auto;
+  background-color:#FFF;
+  border:1px solid #333;
+}
+
+.part > div {
+  width:200px; height:200px;
+}
+
+/*
+- margin은 연속해서 있으면 큰 쪽의 값을 받아들인다 >> float으로 처리
+- 맨 위와 맨 아래는 위, 아래 margin 적용이 되지 않는다 >> border를 만들어서 처리
+
+*/
+
+.margin_01 {
+  background-color: pink;
+  margin:50px;
+}
+.margin_02 {
+  background-color: darkturquoise;
+  margin:10px;
+}
+.margin_03 {
+  background-color:aquamarine;
+  margin:50px;
+}
+
+/**********************************/
+
+.part_02{
+  border:none;
+  height:2000px;
+}
+
+.part_02 > div {
+  float:left;
+  background-image:linear-gradient(30deg, #afc, #fca);
+}
+
+.more_margin_01 {
+  margin:10px;
+}
+.more_margin_02 {
+  margin:30px;
+}
+.more_margin_03 {
+  margin:40px 20px;
+} /* 상하 좌우 */
+.more_margin_04 {
+  margin:10px 20px 30px;
+} /* 상 좌우 하 */
+.more_margin_05 {
+  margin: 5px 20px 10px 40px;
+} /* 위에서부터 시계방향 */
+.more_margin_06 {
+  margin:10px;
+  margin-left:40px; /* 왼쪽은 40px로 */
+}
+.more_margin_07 {
+  margin-top:40px;
+  margin-left:20px;
+  margin-right:10px;
+  margin-bottom:300px;
+}
+.more_margin_08 {
+  margin-top:10px;
+  margin-top:1px; /* 새로운 값으로 바뀜*/
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>웹기초</title>
+  <style>
+    .box_01{
+      width:200px; height:50px;
+      background-color: aqua;
+    }
+    .box_02 {
+      width:300px; height:30px;
+      background-color:lightpink;
+    }
+    ul{
+      list-style: none;
+      width:200px; height:auto;
+      background-color: gainsboro;
+    }
+    li{
+      width:200px; height:30px;
+    }
+    .list_01 {
+      background-color: pink;
+    }
+    .list_02 {
+      background-color: lightsteelblue;
+    }
+
+    hr {
+      width:500px; height:20px;
+      background-color: aquamarine;
+    }
+
+    .mini_group_01 {
+      width:300px; height:40px;
+      background-color:sandybrown;
+    }
+
+    a {
+      width:400px; height:30px;
+      background-color:powderblue;
+    }
+
+    button {
+      width:300px; height:30px;
+      background-color: lightsalmon;
+      border:0;
+    }
+
+    .convert_box_01 {
+      width:300px; height:50px;
+      background-color: #DDD;
+    }
+
+    .convert_box_01 > a {
+      /*display:block;*/
+      display:inline-block;
+      width:30%; height:30px;
+      font-size:0.7em;
+    }
+
+    .convert_box_02 {
+      /*display:inline;*/
+      display:none;
+      width:500px; height:50px;
+      background-color:skyblue;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1><a href="../index.html">웹기초</a></h1>
+    <h2>inline과 block의 개념</h2>
+    <div class="box_01">div 크기</div><!-- block -->
+    <p class="box_02">p요소 크기</p><!-- block -->
+    <ul><!-- block -->
+      <li class="list_01">list_01</li><!-- block -->
+      <li class="list_02">list_02</li>
+    </ul>
+
+    <hr /><!-- block -->
+    <span class="mini_group_01">의미없는 작은 단위의 그룹요소</span><!-- inline -->
+    <a href="#">link 기능을 가진 요소</a><!-- inline -->
+
+    <hr />
+    <button type="button">버튼은 어떠한 형태?</button>
+    <button type="button">버튼은 어떠한 형태?</button>
+
+    <hr />
+    <div>블록
+      <span>인라인</span> <!-- 물 안에 물병 넣기 x. 물병 안에 물 넣기-->
+    </div>
+
+    <div>
+      <a href="#">
+        <div>a내부에</div>
+        <p>설명</p>
+        <dl>
+          <dt>제목</dt>
+          <dd>내용</dd>
+        </dl>
+      </a>
+    </div>
+<!-- a를 쓸때는 div 안에 감싸기 -->
+    <div>
+      <p>상자 안에 설명</p>
+    </div>
+    <!-- div 안에 p 넣기. p 안에 div는 X-->
+
+    <div class="convert_box_01">
+      <a href="#">block으로 변환</a>
+      <a href="#">block으로 변환</a>
+      <a href="#">block으로 변환</a>
+    </div>
+
+    <div class="convert_box_02">
+      Lorem ipsum
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* a_13_border.css */
+
+#wrap {
+  width:900px; height:auto;
+  margin:0 auto;
+  padding-bottom:20px;
+  background-color: #EEE;
+}
+
+.part {
+  width:90%; height:500px;
+  margin:0 auto;
+  background-color: #AFF;
+}
+
+.part > div {
+  float:left;
+  width:150px; height:150px;
+  background-color:#DDD;
+  background-image: linear-gradient(60deg, white, salmon);
+}
+
+.border_01 {
+  border-width:10px;
+  border-style:solid;
+  border-color:#777;
+}
+
+.border_02 {
+  border:30px solid #F7F;
+}
+
+.border_03 {
+  margin-top:70px;
+  border:20px solid #5A5;
+  box-sizing: border-box;
+  /* 기본 : content-box */
+}
+
+.border_04 {
+  margin-top:70px;
+  padding:20px;
+  border:40px solid #479;
+  box-sizing: border-box;
+}
+
+.border_05 {
+  margin-top:20px;
+  border:30px solid #999;
+  border-left-color:#FFF;
+  border-right-style:dotted;
+  border-top-width:5px;
+  }
+
+  .border_06 {
+    margin:40px;
+    border: 10px solid #FFF;
+    border-color:#FA0;
+    border-bottom-color:#F07;
+  }
+
+  .border_07 {
+    border-top:10px solid #555;
+    border-left:30px solid #AAA;
+  }

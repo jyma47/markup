@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* a_17_overflow.html */
+
+body, h1, h2, hr {
+  margin:0; padding:0;
+}
+
+#wrap {
+  width:900px; height:auto;
+  margin:auto;
+  background-color:#DDD;
+}
+
+.part {
+  width:90%; height:auto;
+  margin:10px auto;
+  padding-bottom:30px;
+  background-color: #FFD;
+}
+
+.ex {
+  width:70%; height:200px;
+  margin:auto;
+  margin-bottom:100px;
+  background-color: #FFF;
+  border:1px solid #777;
+  font-size:23px;
+}
+
+.hidden {
+  overflow:hidden;
+}
+
+.scroll {
+  /* overflow-x:hidden; */
+  overflow:hidden;
+  overflow-y:scroll;
+}
+
+/*스크롤바가 언제나 있음*/
+
+.auto {
+  overflow:auto;
+}
+
+/* 넘치는 영역이 없으면 스크롤바가 없음 */

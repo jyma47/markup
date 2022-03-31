@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/* a_16_display.css */
+body, h1, h2, ul {
+  margin:0; padding:0;
+}
+
+li {
+  list-style:none;
+}
+
+#wrap {
+  width:900px; height:auto;
+  margin:auto;
+  padding:10px;
+  background-color: #CCC;
+}
+
+.part {
+  width:95%; height: auto;
+  margin:auto;
+  margin-bottom:20px;
+  background-color: #FFF;
+}
+
+.exam {
+  width:100%; height:auto;
+}
+.exam:after,
+.exam::after {
+  content:"";
+  display:block;
+  width:100%; height:0;
+  clear:both;
+}
+
+li {
+  float:left;
+  width:100px; height:100px;
+  padding:10px;
+  box-sizing: border-box;
+  font-size:1.2em;
+  font-weight:bold;
+  background-color:burlywood;
+  background-image: linear-gradient(45deg, #ADF, #FC7);
+}
+
+li > a {
+  display:block;
+  width:100%; height:100%;
+}
+
+/************************************/
+
+.block {
+  display:block;
+}
+
+.none {
+  display:none;
+}
+
+/************************************/
+
+.visible {
+  visibility: visible;
+}
+.hidden {
+  visibility: hidden;
+}
+
+/************************************/
+
+.opacity_10{
+  opacity: 1;
+}
+.opacity_05{
+  opacity:0.5;
+}
+.opacity_00{
+  opacity:0;
+}
+
+/************************************/
+
+.transparent {
+  background-image: none;
+  background-color:transparent;
+  color:transparent;
+}
+/*
+transparent : 투명하게 만들기
+inherit : 부모의 것을 받아들임
+*/
+
+/*
+.transparent > a {
+  color:inherit;
+}
+*/
+
+.alpha_01 {
+  background-image:none;
+  background-color:#ADF5;
+}
+/*
+efefef55 : rgba 8자리
+일부 구형 브라우저에서 투명도가 적용되지 않음
+*/
+
+.alpha_02 {
+  background-image:none;
+  background-color:rgba(255, 0, 255, 0.3);
+}
+
+.alpha_03 {
+  background-image:none;
+  background-color:hsla(47, 100%, 50%, 0.5);
+  /* 채도(0~360) 명도(0~100%) 밝기(0~100%) */
+}
+
+.alpha_01 > a {background-color:rgba(255,0,50,0.5);}
+.alpha_02 > a {background-color:rgba(255,0,50,0.5);}
+.alpha_03 > a {background-color:rgba(255,0,50,0.5);}

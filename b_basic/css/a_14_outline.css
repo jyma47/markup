@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* a_14_outline.css */
+
+#wrap {
+  width:900px; height:2000px;
+  margin:0 auto;
+  background-color: #DDD;
+}
+
+.part {
+  width:90%; height:500px;
+  margin:0 auto;
+  padding:30px;
+  /* box-sizing: border-box; */
+  background-color: #FFF;
+}
+
+.part > div {
+  float:left;
+  width:150px; height:150px;
+  background-color: #ACC;
+  background-image: linear-gradient(-45deg, #ACA, #FCA);
+}
+
+.outline_01 {
+  outline-width:50px;
+  outline-style:solid;
+  outline-color:#999;
+}
+.outline_02 {
+  outline: 10px solid orange;
+}
+.outline_03 > a:focus {
+  outline:5px dotted #07A;
+}
+.outline_04 > button:hover {
+  outline:10px solid #F77;
+}
+.outline_05:focus {
+  outline:30px solid #F44;
+}
+
+/*
+hover : 마우스 올리기
+focus : 초점 잡기
+focus를 잡을 수 있는 요소 - anchor, button, form 요소(input)
+focus를 잡을 수 없는 요소 - ul, li, p, div (강제는 가능하지만 기본적으로는 안됨)
+*/

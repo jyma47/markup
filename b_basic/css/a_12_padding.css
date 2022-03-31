@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* a_12_padding.css */
+#wrap {
+  width:900px; height:2000px;
+  background-color:#EEE;
+  margin:0 auto;
+}
+
+.part {
+  width:95%; height:500px;
+  background-color: #FFF;
+  margin:0 auto;
+}
+
+.part > div {
+  float:left;
+  width:120px; height:120px;
+  background-color: #acf; /* 구형 브라우저는 gradient가 나타나지 않을 수도 있음 */
+  background-image:linear-gradient(45deg, #acf, #fda);
+}
+
+.part .padding_01 {
+  width:200px; height:200px;
+} /* 크기가 200*200 */
+
+.part .padding_02 {
+  padding:50px;
+} /* 크기는 100*100이고 padding을 상하좌우에 50씩 적용*/
+
+.part .padding_03 {
+  width:200px; height:200px;
+}
+.padding_inner {
+  width:100px; height:100px;
+  margin: auto;
+  margin-top:50px;
+  /*
+  background-color: purple;
+  color:white;
+  */
+}
+
+/**************************/
+
+.part .padding_04 {
+  width:60px; height:60px;
+  padding:20px;
+}
+
+.part .padding_05 {
+  padding:20px;
+  box-sizing:border-box;
+}
+/* box-sizing에는 border-box와 content-box가 있다 */
+
+/**************************/
+
+.more_p_01 {
+  padding:20px;
+}
+.more_p_02 {
+  padding:20px 40px;
+} /* 상하 좌우*/
+.more_p_03 {
+  padding:10px 20px 40px;
+}/* 상 좌우 하*/
+.more_p_04 {
+  padding:20px 30px 40px 10px;
+}/* 위에서부터 시계방향 */
+/* 5개 이상은 x z*/
+.more_p_05 {
+  padding:30px;
+  padding-left:50px;
+}/* 밑에 있는 것이 적용 */
+.more_p_06 {
+  padding-top:10px;
+  padding-right:20px;
+  padding-bottom:30px;
+  padding-left:50px;
+}
+.more_p_07 {
+  padding-left:50px;
+  padding-left:80px;
+}
+.more_p_08 {
+  margin:auto;
+  padding:auto;
+}/*padding은 auto가 없다*/
+.more_p_09 {
+  margin-top:-50px;
+  margin-left:-100px;
+}
+.more_p_10 {
+  padding-top:-150px;
+}/* padding은 음수 값이 없다 */

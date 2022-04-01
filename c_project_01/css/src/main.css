@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/* main.css */
+
+/* reset.css */
+
+body {
+  margin:0;
+  padding:0;
+}
+
+/* design */
+
+#wrap {
+  width:100%;
+  min-width:1440px;
+  height:auto;
+  min-height:500px;
+  margin:auto;
+}
+
+/* head box */
+#headBox {
+  width:100%;
+  height:auto;
+  padding: 20px 100px 10px;
+  box-sizing: border-box;
+  background-color:#AAA;
+}
+
+#headBox:after, #headBox::after {
+  content:"";
+  display:block;
+  width:100%; height:0;
+  clear:both;
+}
+
+#logo {
+  float:left;
+  width:120px;
+  height:70px;
+  /*
+  margin-top:20px; margin-left:100px;
+  */
+  background-color: #444;
+}
+
+#navBox {
+  float:right;
+  width:510px;
+  height:70px;
+  /*
+  margin-top:20px; margin-right:100px;
+  */
+  background-color: #444;
+}
+
+
+/* slide box */
+#slideBox {
+  width:100%;
+  height:600px;
+  padding-top:100px;
+  box-sizing: border-box;
+  background-color: #777;
+}
+
+#adCon_01 {
+  width:780px; height:400px;
+  margin:auto;
+  background-color: #BBB;
+}
+
+/* new box */
+#newBox {
+  width:100%;
+  height:700px;
+  padding-top:62px;
+  box-sizing: border-box;
+  background-color: #FFF;
+}
+
+.area_title {
+  width:940px; height:70px;
+  margin:auto;
+  background-color:#AAA;
+}
+
+.area_content {
+  width:940px; height:370px;
+  margin:48px auto 50px; 
+  background-color:#AAA;
+}
+
+.area_indicator {
+  width:140px; height:30px;
+  margin:auto;
+  background-color:#AAA;
+}
+
+/* sub box */
+#subBox {
+  width:100%;
+  height:350px;
+  padding-top:50px;
+  box-sizing: border-box;
+  background-color: #777;
+}
+
+#subBox > .area {
+  width:1100px; height:300px;
+  margin:auto;
+  background-color: #CCC;
+}
+
+/* best box */
+#bestBox {
+  width:100%;
+  height:700px;
+  padding-top:175px;
+  box-sizing: border-box;
+  background-color: #FFF;
+}
+
+#bestBox > .area {
+  width:1100px; height:380px;
+  margin:auto;
+  background-color: #CCC;
+}
+
+/* gallery box */
+#galleryBox {
+  width:100%;
+  height:750px;
+  padding-top:75px;
+  box-sizing: border-box;
+  background-color: #CCC;
+}
+
+#galleryBox .area_title {
+  background-color: #FFF;
+}
+
+#galleryBox .area_content {
+  height:420px;
+  background-color: #777;
+}
+
+/* sponsor box */
+#sponsorBox {
+  width:100%;
+  height:100px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  background-color: #666;
+}
+
+.sponsor {
+  width: 940px; height: 80px;
+  margin:auto;
+  background-color: #fff;
+}
+
+
+/* footer box */
+#footerBox {
+  width:100%;
+  height:450px;
+  padding-top:68px;
+  box-sizing: border-box;
+  background-color: #222;
+}
+
+.footer_area {
+  width: 940px; height:auto;
+  margin:auto;
+  /* background-color: rgba(255,255,255,0.7); */
+}
+
+.info_logo {
+  width:120px; height:70px;
+  margin-bottom:45px;
+  background-color: #CCC;
+}
+
+.info_company {
+  width:940px; height:135px;
+  background-color: #666;
+}

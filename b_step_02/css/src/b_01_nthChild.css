@@ -1,0 +1,108 @@
+/* b_01_nthChild.css */
+
+.code_exam {
+  width:900px; height:auto; min-height:1000px;
+  margin:auto;
+  padding:20px;
+  box-sizing: border-box;
+  background-color: #EEE;
+}
+
+.code_exam h1 {
+  width:100%; height:auto;
+  padding-bottom:10px;
+  font-size:20px;
+  font-weight:700;
+  text-align: center;
+}
+
+.code_exam .part {
+  width:90%; height:auto;
+  margin:auto;
+  margin-top: 20px;
+  padding:20px;
+  border:1px solid #555;
+  box-sizing: border-box;
+  background-color: #FDD;
+}
+
+.code_exam h2 {
+  width:100%; height:auto;
+  margin-bottom:10px;
+  border-bottom:1px solid #333;
+  font-weight: 700;
+}
+
+.code_exam .n_child_01,
+.code_exam .n_child_02 {
+  padding:20px;
+  border-radius: 10px;
+  background-color: #FEE;
+}
+
+.code_exam .list {
+  list-style:decimal;
+  margin-left:30px;
+  margin-bottom:10px;
+}
+
+/**********************************************/
+
+.n_child li {
+  font-weight: 700;
+}
+
+.n_child li:first-child {
+  color:#A06;
+}
+
+.n_child li:nth-child(1) {
+  text-decoration: underline;
+}
+
+.n_child li:nth-child(3){
+  color:#3C3;
+}
+
+.n_child li:nth-child(10){
+  color:#3CF;
+}
+
+.n_child li:last-child{
+  color:#777;
+  text-transform: uppercase;
+  margin-bottom:0;
+}
+
+.n_child li:nth-last-child(1) {
+  font-size:24px;
+}
+
+.n_child li:nth-last-child(3) {
+  font-size:22px;
+}
+
+.n_child li:nth-child(3n) {
+  list-style-type: disc;
+}
+
+.n_child li:nth-child(3n+2) {
+  list-style-type: lower_alpha;
+  font-weight:100;
+}
+
+/**********************************************/
+
+.n_child_02 .list:nth-child(1) {
+  font-weight: 700;
+  color:red;
+}
+.n_child_02 .list:nth-child(3) {
+  font-weight: 700;
+  color:red;
+}/* 연달아서 있는 것들로 구분, 맞는 속성인 것만 먹는다 */
+
+.n_child_02 .list:nth-last-child(3) {
+  font-weight: 700;
+  color:red;
+}

@@ -1,0 +1,83 @@
+/* b_02_nthOfType.css */
+
+.code_exam {
+  width:900px; height:auto; min-height:1000px;
+  margin:auto;
+  padding:20px;
+  box-sizing: border-box;
+  background-color: #EEE;
+}
+
+.code_exam h1 {
+  width:100%; height:auto;
+  padding-bottom:10px;
+  font-size:20px;
+  font-weight:700;
+  text-align: center;
+}
+
+.code_exam .part {
+  width:90%; height:auto;
+  margin:auto;
+  margin-top: 20px;
+  padding:20px;
+  border:1px solid #555;
+  box-sizing: border-box;
+  background-color: #FDD;
+}
+
+.code_exam h2 {
+  width:100%; height:auto;
+  margin-bottom:10px;
+  border-bottom:1px solid #333;
+  font-weight: 700;
+}
+
+.code_exam .n_of_type_01 {
+  padding:20px;
+  border-radius: 10px;
+  background-color: #FEE;
+}
+
+.code_exam .list {
+  list-style:decimal;
+  margin-left:30px;
+  margin-bottom:10px;
+}
+
+/*****************************************/
+
+.n_of_type_01 dt:nth-of-type(1) {
+  color:darkcyan;
+}
+
+.n_of_type_01 dt:nth-of-type(2) {
+  color:fuchsia;
+}
+
+.n_of_type_01 dd:nth-of-type(3n+2) {
+  border:2px solid #F00;
+}
+
+.n_of_type_01 dd:first-of-type {
+  font-size:20px;
+}
+
+.n_of_type_01 dt:last-of-type {
+  font-size:23px;
+  font-weight: 700;
+}
+
+.n_of_type_01 dd:nth-last-of-type(2) {
+  border:2px dotted #333;
+}
+
+
+.n_of_type_01 dd:empty {
+  height:30px;
+  background-color: #FFF;
+}
+
+.n_of_type_01 dd:not(.other) {
+  background-color: yellow;
+}

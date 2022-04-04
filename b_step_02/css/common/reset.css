@@ -64,3 +64,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+header, article, section, footer, nav, aside,
+figure, figcaption,main {
+  display:block;
+}

@@ -1,0 +1,87 @@
+/* b_04_position.css */
+
+.ex_wrap > ul {
+  width:100%; height:auto;
+  border:1px solid #333;
+  box-sizing: border-box;
+}
+
+.ex_wrap li {
+  float:left;
+  width:100px; height:100px;
+  font-size:17px;
+  text-align: center;
+  /*
+  background-color: #FFF;
+  background-image: linear-gradient(45deg, skyblue, lightpink);
+  */
+}
+
+.default {
+  background-color: #BFFCD5;
+}
+
+.static {
+  background-color: #9E55ED;
+}
+.fixed {
+  background-color: #C0E463;
+}
+.absolute {
+  background-color: #F4FBBB;
+}
+.relative {
+  background-color: #90A69E;
+}
+
+/**********************************/
+
+.static {
+  position:static;
+  top:1000px; left:500px;
+  z-index:100;
+}
+/* static은 top-bottom-left-right와 z-index가 먹히지 않음 */
+
+.fixed {
+  position:fixed; 
+  top:100; left:100;
+  z-index:10;
+  /*
+  right:0; bottom:0;
+  margin:auto;
+  */
+}
+/* left right 중 left가 기준, top bottom 중 top이 기준 */
+/* 4가지 다 쓰고 margin:auto 쓰면 정가운데로 온다 */
+
+.absolute {
+  position:absolute;
+  bottom:-50; left:0;
+  /*
+  top:0; right:0;
+  margin:auto;
+  */
+  /*
+  양수면 위로 쌓임, 음수면 아래로 쌓임
+  z-index가 아래에 깔려 있으면 a 태그가 작동하지 않음
+  */
+}
+
+/* fixed와 absolute가 겹쳐질 수도 있음.
+z-index가 없으면 더 뒤에 쓴 코드가 맨 위로 올라옴. */
+
+.relative {
+  position:relative;
+  top:150px; left:-200px;
+  z-index:100;
+}
+
+.relative:hover{
+  background-color: tomato;
+}
+
+.ex_wrap > ul {
+  position:relative;
+  top:200px; left:-50px;
+}

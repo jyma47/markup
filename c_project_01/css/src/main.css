@@ -1,41 +1,24 @@
-@charset "UTF-8";
 /* main.css */
-
-/* reset.css */
-
-body, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dd, dt{
-  margin: 0;
-  padding: 0;
-}
-
-ul, ol, li{
-  list-style: none;
-}
-
-
-/* common.css */
-.max_width_01{
-  width: 95%;
-  min-width: 960px;
-  margin: auto;
-}
 
 /* design */
 
 #wrap {
   width:100%;
   min-width: 960px;
-  /*min-width:1440px;*/
   height:auto;
   min-height:500px;
   margin:auto;
+  padding-top:100px;
 }
 
 /* head box */
 #headBox {
+  position:fixed;
+  top:0; left:0;
+  z-index:1500;
   width:100%;
-  height: 100px;
-  padding: 20px 100px;
+  height: auto;
+  padding: 20px 50px 10px;
   box-sizing: border-box;
   background-color:#AAA;
 }
@@ -43,6 +26,7 @@ ul, ol, li{
 .header_area {
   width:100%;
   max-width:1440px;
+  height:auto;
   margin:auto;
 }
 
@@ -59,28 +43,110 @@ ul, ol, li{
   height:70px;
   /*
   margin-top:20px; margin-left:100px;
-  */
   background-color: #444;
+  */
 }
 
 #navBox {
   float:right;
   width:510px;
-  height:70px;
+  height:auto;
   /*
   margin-top:20px; margin-right:100px;
-  */
   background-color: #444;
+  */
+  
 }
 
+.unb {
+  float:right;
+  width:270px; height:26px;
+  margin-bottom:10px;
+  /*background-color: #FFF;*/
+}
+
+.gnb {
+  float:right;
+  width:510px; height:34px;
+   /*background-color: #FFF;*/
+}
+
+.unb ul, .gnb ul {
+  width:100%; height:auto;
+  box-sizing: border-box;
+}
+
+.unb ul {
+  padding:3px 5px;
+}
+
+.unb li {
+  float:left;
+  width:50px; height:20px;
+  margin-left:20px;
+  font-size:10px;
+  background-color: cyan;
+}
+
+.first_margin li:first-child {
+  margin-left:0;
+}
+
+/*
+.unb li:first-child {
+  margin-left:0;
+}
+*/
+
+.gnb ul {
+  padding:4px 5px;
+}
+
+.gnb li {
+  float:left;
+  width:70px; height:25px;
+  margin-left:16px;
+  background-color: cyan;
+}
+
+/*
+.gnb li:first-child {
+  margin-left:0;
+}
+*/
 
 /* slide box */
 #slideBox {
+  position:relative;
   width:100%;
   height:600px;
   padding-top:100px;
   box-sizing: border-box;
   background-color: #777;
+}
+
+.slide_btn {
+  position:absolute;
+  top:0; bottom:0;
+  left:0; right:0;
+  margin:auto;
+  width:100%;
+  min-width:940px;
+  max-width:1440px;;
+  height:0;
+}
+
+.slide_btn button {
+  width:60px; height:40px;
+  background-color: aquamarine;
+}
+
+.slide_btn .next {
+  float:right;
+}
+
+.slide_btn .prev {
+  float:left;
 }
 
 #adCon_01 {
@@ -91,6 +157,7 @@ ul, ol, li{
 
 /* new box */
 #newBox {
+  position:relative;
   width:100%;
   height:700px;
   padding-top:62px;
@@ -104,31 +171,66 @@ ul, ol, li{
   background-color:#AAA;
 }
 
-.area_content {
-  width:940px; height:370px;
-  margin:48px auto 50px; 
-  background-color:#AAA;
-}
-
 .area_indicator {
+  position:absolute;
+  bottom:70px; left:0; right:0;
   width:140px; height:30px;
   margin:auto;
   background-color:#AAA;
 }
 
+.area_content {
+  width:940px; height:370px;
+  margin:48px auto 0; 
+  background-color:#AAA;
+}
+
+.area_content ul {
+  width:100%; height:100%;
+}
+.area_content li {
+  float:left;
+  width:300px; height:370px;
+  margin-left:20px;
+  background-color: chartreuse;
+}
+
+
 /* sub box */
 #subBox {
+  position:relative;
   width:100%;
   height:350px;
+  margin:auto;
+  /*
   padding-top:50px;
   box-sizing: border-box;
+  */
   background-color: #777;
 }
 
 #subBox > .area {
+  position:absolute;
+  bottom:0; left:0; right:0;
+
   height:300px;
+  margin:auto;
   background-color: #CCC;
 }
+
+.sub_area {
+  float:right;
+  width:400px; height:200px;
+  margin-top:52px;
+  margin-right:70px;
+  background-color: cyan;
+}
+.sub_area_img {
+  float:left;
+  width:460px; height:300px;
+  background-color: cyan;
+}
+
 
 /* best box */
 #bestBox {
@@ -141,12 +243,33 @@ ul, ol, li{
 
 #bestBox > .area {
   height:380px;
+  margin:auto;
   background-color: #CCC;
+}
+
+.best_area {
+  float:left;
+  width:230px; height:380px;
+  background-color: yellow;
+}
+.best_card_list {
+  float:right;
+  width:800px; height:380px;
+}
+
+.best_card_list ul {
+  width:100%; height:100%;
+}
+
+.best_card_list li {
+  float:left;
+  width:240px; height:380px;
+  margin-left:40px;
+  background-color: cyan;
 }
 
 /* gallery box */
 #galleryBox {
-  width:100%;
   height:750px;
   padding-top:75px;
   box-sizing: border-box;
@@ -172,6 +295,7 @@ ul, ol, li{
 }
 
 .sponsor {
+  width:940px;
   height: 80px;
   background-color: #fff;
 }
@@ -179,7 +303,6 @@ ul, ol, li{
 
 /* footer box */
 #footerBox {
-  width:100%;
   height:450px;
   padding-top:68px;
   box-sizing: border-box;

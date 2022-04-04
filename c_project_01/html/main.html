@@ -3,53 +3,130 @@
 <html lang="ko-KR">
 <head>
   <meta charset="UTF-8">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
   <link rel="stylesheet" href="../css/src/main.css">
   <title>웹페이지 구축 layout</title>
 </head>
 <body>
   <div id="wrap">
 
-    <div id="headBox">
+    <header id="headBox">
       <div class="header_area">
-        <div id="logo">logo</div>
-        <div id="navBox">navBox</div>
+        <h1 id="logo">osam</h1>
+        <nav id="navBox">
+          <h2 class="blind">page navigation</h2>
+          <div class="unb">
+            <h3 class="blind">사용자 설정 내비게이션</h3>
+            <ul class="clearfix first_margin">
+              <li><a href="#">unb_01</a></li>
+              <li><a href="#">unb_02</a></li>
+              <li><a href="#">unb_03</a></li>
+              <li><a href="#">unb_04</a></li>
+            </ul>
+          </div><!-- unb -->
+          <div class="gnb">
+            <h3 class="blind">페이지 전체 내비게이션</h3>
+            <ul class="clearfix first_margin">
+              <li><a href="#">gnb_01</a></li>
+              <li><a href="#">gnb_02</a></li>
+              <li><a href="#">gnb_03</a></li>
+              <li><a href="#">gnb_04</a></li>
+              <li><a href="#">gnb_05</a></li>
+              <li><a href="#">gnb_06</a></li>
+            </ul>
+          </div><!-- gnb -->
+        </nav>
       </div>
-    </div><!-- headBox -->
+    </header><!-- headBox -->
 
-    <div id="slideBox">
+    <section id="slideBox">
+      <h2 class="blind">주요 광고영역</h2>
+      <div class="slide_btn">
+        <button type="button" class="next">next</button>
+        <button type="button" class="prev">prev</button>
+      </div><!-- slide button -->
       <div id="adCon_01">adCon</div>
-    </div><!-- slideBox -->
+    </section><!-- slideBox -->
 
-    <div id="newBox">
-      <div class="area_title">title</div>
-      <div class="area_content">content</div>
-      <div class="area_indicator">indicator</div>
-    </div><!-- newBox -->
+    <article id="newBox">
+      <h2 class="area_title">title</h2>
+      
+      <div class="area_indicator">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
 
-    <div id="subBox">
-      <div class="max_width_01">subBox area</div>
-    </div><!-- subBox -->
+      <div class="area_content first_margin">
+        <ul>
+          <li>card_01</li>
+          <li>card_02</li>
+          <li>card_03</li>
+        </ul>
+      </div>
+      
+    </article><!-- newBox -->
 
-    <div id="bestBox">
-      <div class="max_width_01">bestBox area</div>
-    </div><!-- bestBox -->
+    <section id="subBox">
+      <div class="max_width_01 area">
+        <div class="sub_area">
+          <h2>보조 광고영역</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <div class="sub_area_btn"></div>
+        </div><!-- sub area -->
+        <div class="sub_area_img">
+          이미지 영역
+        </div><!-- sub area img -->
+        
+      </div>
+    </section><!-- subBox -->
 
-    <div id="galleryBox">
+    <article id="bestBox">
+      <div class="max_width_01 area">
+        <div class="best_area">
+          <h2>인기 메뉴 리스트</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="best_btn"></div>
+          <div class="more_btn"></div>
+        </div>
+
+        <div class="best_card_list first_margin">
+          <ul>
+            <li>best_card_01</li>
+            <li>best_card_02</li>
+            <li>best_card_03</li>
+          </ul>
+        </div>
+
+      </div>
+    </article><!-- bestBox -->
+
+    <article id="galleryBox">
       <div class="max_width_01 area_title">gallery title</div>
       <div class="max_width_01 area_content">content</div>
-    </div><!-- galleryBox -->
+    </article><!-- galleryBox -->
 
-    <div id="sponsorBox">
-      <div class="max_width_01 sponsor">sponsor area</div>
+    <aside id="sponsorBox">
+      <div class="max_width_01 sponsor">
+        <ul></ul>
+      </div>
       <!-- class 이름을 sponsor_area로 하면 안보이는 문제 -->
-    </div>
+    </aside>
 
-    <div id="footerBox">
-      <div class="footer_area">
-        <div class="info_logo">logo</div>
+    <footer id="footerBox">
+      <div class="max_width_01 footer_area">
+        <div class="info_logo">오삼커피 회사 정보</div>
         <div class="info_company">company</div>
       </div>
-    </div><!-- footerBox -->
+    </footer><!-- footerBox -->
 
   </div><!-- wrap -->
 </body>

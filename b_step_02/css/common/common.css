@@ -10,6 +10,23 @@
   display:none;
 }
 
+
+.first_margin > li:first-child {
+  margin-left: 0;
+}
+
+.last_margin > li:last-child {
+  margin-right: 0;
+}
+
+.blind {
+  display:block;
+  position: absolute;
+  z-index:-1;
+  width:0; height:0;
+  overflow: hidden;
+}
+
 /* code example setting */
 .code_exam {
   width:1200px; height:auto; min-height:1000px;

@@ -1,0 +1,133 @@
+/* c_01_img_vs_background.css */
+
+.img_area {
+  float:left;
+  width:200px; height:200px; 
+  margin-left:150px;
+  border:1px solid #777; border-radius:5px;
+}
+.img_01 {
+  overflow: hidden;
+}
+
+.img_01 img {
+  width:auto; height:auto;
+  min-width:100%; min-height:100%;
+  margin-top:-30px;
+}
+
+.img_02 {
+  background-image:url("../../img/card_image/mini_card_bg-3.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+}
+.img_02 > span {
+  display: block;
+  width: 0; height: 0; overflow: hidden;
+}
+
+.img_03 {
+  background:center no-repeat url("../../img/card_image/mini_card_bg-5.png");
+  background-size: cover;
+  font-size:0;
+}
+
+/* ----------------------------------------- */
+
+.bg_02 > li {
+  width:500px; height:200px;
+  margin-bottom:100px;
+  border:1px solid #555;
+}
+
+.bg_02 > li:nth-child(1) {
+  background-image: url("../../img/icon/001-pin.png");
+  background-repeat:repeat-y;
+  /*
+  background-repeat: repeat || no-repeat || repeat-x || repeat-y;
+  */
+}
+
+.bg_02 > li:nth-child(2) {
+  background-image: url("../../img/icon/005-play-button.png");
+  background-repeat: no-repeat;
+  /*
+  background-position-x: center;
+  background-position-y: center;
+  */
+  background-position: left bottom;
+}
+
+.bg_02 > li:nth-child(3) {
+  background-image: url("../../img/icon/005-play-button.png");
+  background-repeat: no-repeat;
+  background-position:100% 0;
+}
+
+.bg_02 > li:nth-child(4) {
+  height:250px;
+  background-image: url("../../img/card_image/mini_card_bg-4.png");
+  background-repeat: no-repeat;
+  background-position:50% 50%;
+  
+  background-size:contain;
+  /*
+  background-size:cover || contain;
+  */
+}
+
+.bg_02 > li:nth-child(5) {
+  height: 300px;
+  background-image: url("../../img/card_image/mini_card_bg-5.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size:auto 100%;
+}
+
+.bg_02 > li:nth-child(6) {
+  background-image: url("../../img/background/florian-wehde-OJScR4tDRyc-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  background-attachment:fixed;
+  /*
+  background-attachment:scroll || fixed;
+  */
+}
+
+.bg_02 > li:nth-child(7) {
+  width:100%; 
+  background-image: url("../../img/card_image/mini_card_bg-7.png"), 
+                    url("../../img/card_image/mini_card_bg-9.png"),
+                    url("../../img/icon/001-pin.svg");
+  background-repeat:repeat-y,repeat-y, repeat;
+  background-position: 0 0, 100% 0, 0 50%;
+  background-size: auto 50%, auto 50%, auto 30%;
+}
+
+.bg_02 > li:nth-child(8) {
+  background-image: url("../../img/background/florian-wehde-OJScR4tDRyc-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 150% auto;
+  
+  padding:50px;
+  border:30px dotted #fa0;
+  font-size:100px;
+  font-weight:700;
+  line-height:1.1;
+  text-align: center;
+  
+  background-clip:text;
+  -webkit-background-clip:text;  
+  -moz-background-clip: text; 
+  -ms-background-clip: text; 
+  -o-background-clip: text;
+  color:transparent;
+  
+}
+/* 
+.bg_02 > li:nth-child(8) span {
+  display: block; width: 100%; height: 100%; background-color: rgba(0,200,255,0.1);
+} */

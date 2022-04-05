@@ -69,3 +69,7 @@ header, article, section, footer, nav, aside,
 figure, figcaption,main {
   display:block;
 }
+
+abbr {
+  text-decoration: none;
+}

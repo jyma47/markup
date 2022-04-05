@@ -1,0 +1,148 @@
+/* c_02_ir_is.css */
+
+.ir { margin-top: 10px; }
+.ir > li { 
+  float:left;
+  width:80px; height: 80px;
+  margin:20px; 
+  border:1px solid #333;
+  background-color: #fff; 
+  background-image: url("../../img/icon_color/001-airbrush.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 50% auto;
+}
+  
+.ir > li:nth-child(1) {
+  font-size:0;
+}
+  
+.ir > li:nth-child(2) {
+  text-indent:-9999px;
+  overflow: hidden;
+}
+  
+.ir > li:nth-child(3) > span {
+  position: absolute;
+  z-index:-1;
+}
+
+.ir > li:nth-child(4) > span {
+  display:block;
+  width:0; height:0;
+  overflow: hidden;
+}
+
+/* .ir > li:nth-child(5) {} */
+.ir > li:nth-child(5) > span {
+  display:block;
+  position: absolute;
+  z-index:-1;
+  width:0; height:0;
+  overflow: hidden;
+}
+  
+.blind {
+  display:block;
+  position: absolute;
+  z-index:-1;
+  width:0; height:0;
+  overflow: hidden;
+}
+  
+.ir > li:nth-child(6) {
+  background-image: url("../../img/icon_color/002-color-palette.png");
+}
+
+.ir > li:nth-child(6) > a {
+  display: block; width: 100%; height: 100%; 
+}
+
+.ir > li:nth-child(6) > a > span {
+  display: block;
+  width:0; height:0; 
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+    
+.ir > li:nth-child(7) {
+  background-image: none;
+}
+
+.ir > li:nth-child(7) > a {
+  display: block;
+  width: 100%; height: 100%;
+  background-image: url("../../img/icon_color/003-brush.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 50% auto;
+}
+.ir > li:nth-child(7) > a:focus {
+  background-image: url("../../img/icon_color/004-paint-bucket.png");
+}
+.ir > li:nth-child(7) > a:hover {
+  background-image: url("../../img/icon_color/005-paint-brush.png");
+}
+
+/* ------------------------------------------------- */
+.code_exam .is {
+  margin-top: 10px;
+  background-color: #adf;
+}
+
+.is li{
+  float:left;
+  width:100px; height:100px; 
+  border:1px solid #333;
+  padding:10px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.is li a {
+  display: block; width:64px; height:64px; 
+  background-image: url("../../img/icon_color/icon_sprite.png");
+  background-repeat: no-repeat;
+  background-position:0 0;
+  background-size: auto 64px;
+  background-color: #fda;
+}
+
+
+.is a > span {
+  display: block;
+  position: absolute;
+  z-index:-1;
+  width: 0; height: 0;
+  overflow: hidden;
+}
+
+.is li:nth-child(1)>a {
+  background-position-x: -74px;
+} /* -74px * 1 */
+
+.is li:nth-child(2)>a {
+  background-position-x: -148px;
+} /* -74px * 2 */
+
+.is li:nth-child(3)>a {
+  background-position-x: -222px;
+} /* -74px * 3 */
+
+.is li:nth-child(4)>a {
+  background-position-x: calc(-74px * 5);
+} /* -74px * 4 */
+
+.is li:nth-child(5)>a {
+  background-position-x: calc(-74px * 6);
+} /* -74px * 4 */
+
+.is li a:hover {
+  background-color: #afc;
+  background-position-x:calc(-74px * 0);
+}
+
+.is li a:focus {
+  background-color: #333;
+}

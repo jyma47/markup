@@ -176,7 +176,24 @@
   bottom:70px; left:0; right:0;
   width:140px; height:30px;
   margin:auto;
-  background-color:#AAA;
+  /*background-color:#AAA;*/
+}
+
+.area_indicator li {
+  float:left;
+  margin-left:25px;
+  border-radius: 50%;
+  background-color: #AAA;
+}
+
+.area_indicator li button {
+  width:30px; height:30px;
+  
+}
+
+.area_indicator li button:focus {
+  border-radius: 50%;
+  background-color: #666;
 }
 
 .area_content {
@@ -192,7 +209,7 @@
   float:left;
   width:300px; height:370px;
   margin-left:20px;
-  background-color: chartreuse;
+  background-color: cyan;
 }
 
 
@@ -281,8 +298,21 @@
 }
 
 #galleryBox .area_content {
+  position:relative;
   height:420px;
   background-color: #777;
+}
+
+#galleryBox .gallery_image {
+  width:540px; height:420px;
+  background-color: cyan;
+}
+
+#galleryBox .gallery_list {
+  position:absolute;
+  bottom:0; right:0;
+  width:320px; height:270px;
+  background-color: cyan;
 }
 
 /* sponsor box */
@@ -298,6 +328,14 @@
   width:940px;
   height: 80px;
   background-color: #fff;
+}
+
+.sponsor li {
+  float:left;
+  width:140px; height:80px;
+  margin-left:20px;
+  background-color:cyan;
+  overflow: hidden;
 }
 
 
@@ -323,6 +361,23 @@
 }
 
 .info_company {
-  width:940px; height:135px;
+  position:relative;
+  padding-bottom:70px;
+  box-sizing: border-box;
+  width:940px; height:200px;
   background-color: #666;
+}
+
+.address {
+  position:absolute;
+  top:0; left:0;
+  width:500px; height:200px;
+  background-color: cyan;
+}
+
+.sns {
+  position:absolute;
+  width:200px; height:160px;
+  top:40px; right:0;
+  background-color: cyan;
 }

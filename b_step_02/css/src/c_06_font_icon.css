@@ -1,0 +1,9 @@
+/* c_06_font_icon.css */
+
+.ex_wrap li:nth-child(1) {
+  font-size:3rem; color:#f07;
+}
+
+
+.ex_wrap li:nth-child(2) a:hover > span{color:#f05;}
+.ex_wrap li:nth-child(3) { font-size: 3rem; }

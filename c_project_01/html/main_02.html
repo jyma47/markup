@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../css/common/reset.css">
   <link rel="stylesheet" href="../css/common/common.css">
-  <link rel="stylesheet" href="../css/src/main.css">
+  <link rel="stylesheet" href="../css/src/main_02.css">
 
   
   <title웹기초</title>
@@ -19,27 +20,32 @@
   
   <header id="headBox">
     <div class="area_head">
-    <h1 id="logo">osam</h1>
+    <h1 id="logo" class="blind_area">
+      <a href="../index.html">
+        <span>osam</span>
+      </a>
+    </h1>
     <nav id="navBox">
       <h2 class="blind">page navigation</h2>
       <div class="unb">
         <h3 class="blind">사용자 설정 네비게이션</h3>
-        <ul class="clearfix first_margin">
-          <li><a>unb_01</a></li>
-          <li><a>unb_02</a></li>
-          <li><a>unb_03</a></li>
-          <li><a>unb_04</a></li>
+        <ul class="clearfix">
+          <li><a href="#">한국어</a></li>
+          <li><a href="#">sign in</a></li>
+          <li><a href="#">sign up</a></li>
+          <li><a href="#">site map</a></li>
+          
         </ul>
       </div>
       <div class="gnb">
         <h3 class="blind">페이지 전체 네비게이션</h3>
-        <ul class="clearfix first_margin">
-          <li><a>gnb_01</a></li>
-          <li><a>gnb_02</a></li>
-          <li><a>gnb_03</a></li>
-          <li><a>gnb_04</a></li>
-          <li><a>gnb_05</a></li>
-          <li><a>gnb_06</a></li>
+        <ul class="clearfix">
+          <li><a href="#">about us</a></li>
+          <li><a href="#">menu</a></li>
+          <li><a href="#">gift</a></li>
+          <li><a href="#"><abbr title="Frequently Asked Questions">F A Q</abbr></a></li>
+          <li><a href="#">event</a></li>
+          <li><a href="#">notice</a></li>
         </ul>
       </div>
     </nav>
@@ -48,26 +54,48 @@
 
   <section id="slideBox">
     <h2 class="blind">주요 광고영역</h2>
-    <div class="slide_btn">
-      <button type="button" class="next">다음 내용 보기</button>
-      <button type="button" class="prev">이전 내용 보기</button>
+    <div class="slide_btn blind_area">
+      <button type="button" class="next"><span>다음 내용 보기</span></button>
+      <button type="button" class="prev"><span>이전 내용 보기</span></button>
     </div>
-    <div id="adCon_01">adCon_01</div>
+    <div class="slide_area">
+      <div id="adCon_01" class="slide_content">
+        <div class="slide_content_part">
+          <h3>banner title</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi delectus illum.</p>
+          <div class="link">
+            <a href="#">바로가기
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+          <figure class="slide_img_part">
+            <figcaption class="blind">슬라이드 부연 제목</figcaption>
+            <div class="slide_01">
+              <span class="blind">슬라이드 설명에 따른 부연 이미지 설명</span>
+            </div> <!-- //slide_img_part -->
+          </figure>
+        </div> <!-- //adCon_01 -->
+    </div> <!-- //slide_area -->
   </section> <!-- // #slideBox -->
   <!-- 광고영역보다 버튼 영역이 먼저 와야한다 -->
 
 
   <article id="newBox">
-    <h2 class="area_title">area_title</h2>
+    <h2 class="area_title">최신상품</h2>
     <div class="area_indicator">
-      <ul></ul>
+      <ul class="blind_area">
+        <li><a href="#"><span>최신 첫번째 내용</span></a></li>
+        <li><a href="#"><span>최신 두번째 내용</span></a></li>
+        <li><a href="#"><span>최신 세번째 내용</span></a></li>
+      </ul>
     </div> <!-- area_indicator -->
 
     <div class="area_content first_margin">
-      <ul>
-      <li>card_01</li>
-      <li>card_02</li>
-      <li>card_03</li>
+      <ul class="blind_area">
+      <li><a href="#"><span>card_01</span></a></li>
+      <li><a href="#"><span>card_02</span></a></li>
+      <li><a href="#"><span>card_03</span></a></li>
     </ul>
     </div> <!-- area_content -->
     
@@ -114,14 +142,14 @@
   <article id="galleryBox">
     <h2 class="area_title max_width_01">area_title</h2>
     <div class="area_content max_width_01">
-      <div class="gall_area_img"></div>
-      <div class="gall_area_list">
-        <!-- <ul>
-          <li>list</li>
-          <li>list</li>
-          <li>list</li>
-          <li>list</li>
-        </ul> -->
+      <div class="gall_main_content"></div>
+      <div class="gall_list last_margin">
+        <ul>
+          <li><button type="button">list 01</button></li>
+          <li><button type="button">list 02</button></li>
+          <li><button type="button">list 03</button></li>
+          <li><button type="button">list 04</button></li>
+        </ul>
       </div>
     </div>
   </article> <!-- // #galleryBox -->
@@ -147,10 +175,13 @@
   
   <footer id="footerBox">
     <div class="area_foot max_width_01">
-    <h2 class="info_logo">오삼 회사 정보</h2>
-    <div class="info_company">
-      <div class="info_area">
-      <div class="info_family_site"></div>
+    <h2 class="info_logo">오삼커피 회사 정보</h2>
+    <div class="info_company clearfix">
+      <div class="company_content">
+        info_company
+      </div>
+      <div class="social_family">
+        social list and family site
       </div>
     </div>
     </div>

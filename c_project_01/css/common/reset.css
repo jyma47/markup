@@ -1,18 +1,23 @@
 @charset "UTF-8";
 /* reset.css */
+:root {
+  font-size: 16px;
+}
+
 body {
   margin:0;
   line-height: 100%;
   font-family: 'Noto Sans KR', sans-serif;
 }
+
 h1, h2, h3, h4, h5, h6,
 p, pre, q, blockquote,
 ul, ol, li, dl, dt, dd,
 img {
-  margin:0; padding:0; border:0;
-  font-size:100%;
-  font:inherit; /* font:inherit inherit 100%/1.2; */
-  vertical-align: baseline;
+  margin: 0; padding: 0; border:0;
+    font-size:100%;  font-family:inherit;
+    line-height:120%;
+    vertical-align: baseline;
 }
 
 ul, ol {
@@ -68,4 +73,5 @@ table {
 header, article, section, footer, nav, aside,
 figure, figcaption,main {
   display:block;
+  margin:0; padding:0; border:0;
 }

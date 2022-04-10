@@ -1,383 +1,250 @@
-/* main.css */
-
-/* design */
-
+/* design----------------------------- */
 #wrap {
-  width:100%;
-  min-width: 960px;
-  height:auto;
-  min-height:500px;
-  margin:auto;
-  padding-top:100px;
+  /* width:100%; min-width : 960px;  작업을 편리하기 위해 고정 너비 설정한 후 디자인 하고 나서 width 100%로 변경*/
+  width: 1440px;
+  height:auto; min-height: 500px;
+  margin:auto; padding-top : 100px;
 }
-
-/* head box */
+/* headbox------------------------------ */
 #headBox {
-  position:fixed;
-  top:0; left:0;
-  z-index:1500;
-  width:100%;
-  height: auto;
-  padding: 20px 50px 10px;
-  box-sizing: border-box;
-  background-color:#AAA;
-}
-
-.header_area {
-  width:100%;
-  max-width:1440px;
+  position:fixed; top:0; left:0;  /* right:0;  margin:auto; */
+  z-index: 1500;
+  width:100%; /* max-width : 1440px; */
   height:auto;
+  padding : 20px 50px 10px; box-sizing: border-box;
+  background-color: #ccc;}
+
+.area_head {
+  width:100%; max-width : 1440px;
+  height:auto; 
   margin:auto;
 }
-
-.header_area::after {
-  content:"";
-  display:block;
-  width:100%; height:0;
-  clear:both;
-}
-
-#logo {
-  float:left;
-  width:120px;
-  height:70px;
-  /*
-  margin-top:20px; margin-left:100px;
-  background-color: #444;
-  */
-}
-
-#navBox {
-  float:right;
-  width:510px;
-  height:auto;
-  /*
-  margin-top:20px; margin-right:100px;
-  background-color: #444;
-  */
+.area_head::after {content: ""; display: block; width: 100%; height:0; clear:both;}
+  #logo {float:left; width: 120px; height: 70px; background-color: #777;}
   
-}
+  #navBox {
+    float:right; 
+    width:510px; height: auto;
+     /* height:70px;  */
+    /* background-color: #777; */
+  }
 
-.unb {
-  float:right;
-  width:270px; height:26px;
-  margin-bottom:10px;
-  /*background-color: #FFF;*/
-}
+  .unb {
+    float:right;
+    width: 270px; height:26px;
+    /* background-color: #fff; */
+    margin-bottom: 10px;
+  }
+  .gnb {
+    float:right;
+    width: 510px; height: 34px;
+    /* background-color: #ffa; */
+  }
+/* float 내부에 float이 들어있으면 clear 처리 할 것 없이 바로 자동으로 높이 적용 */
 
-.gnb {
-  float:right;
-  width:510px; height:34px;
-   /*background-color: #FFF;*/
-}
+  .unb ul,
+  .gnb ul {width:100%; height: auto; box-sizing: border-box;}
 
-.unb ul, .gnb ul {
-  width:100%; height:auto;
-  box-sizing: border-box;
-}
+  .unb ul {padding:3px 5px; }
+  .unb li {
+    float: left;
+    width: 50px; height: 20px;
+    margin-left : 20px;
+    font-size : 10px;
+    background-color: #0cc;
+  }
 
-.unb ul {
-  padding:3px 5px;
-}
+  .gnb ul {
+    padding: 4px 5px;
+  }
+  .gnb li {
+    float:left;
+    width: 70px; height: 25px;
+    margin-left: 16px;
+    background-color: #0cc;
+  }
 
-.unb li {
-  float:left;
-  width:50px; height:20px;
-  margin-left:20px;
-  font-size:10px;
-  background-color: cyan;
-}
 
-.first_margin li:first-child {
-  margin-left:0;
-}
+/* .unb li:first-child {margin-left:0;} */
+/* .gnb li:first-child {margin-left:0;} */
 
-/*
-.unb li:first-child {
-  margin-left:0;
-}
-*/
+  .first_margin li:first-child {margin-left: 0;}
 
-.gnb ul {
-  padding:4px 5px;
-}
 
-.gnb li {
-  float:left;
-  width:70px; height:25px;
-  margin-left:16px;
-  background-color: cyan;
-}
 
-/*
-.gnb li:first-child {
-  margin-left:0;
-}
-*/
-
-/* slide box */
+/* slidebox------------------------------ */
 #slideBox {
   position:relative;
-  width:100%;
-  height:600px;
-  padding-top:100px;
-  box-sizing: border-box;
-  background-color: #777;
-}
+  width:100%; height:600px;
+  padding-top :100px; box-sizing: border-box;background-color: #aaa;}
+ /* ______________________ */
+  .slide_btn {
+    position:absolute; top: 0; bottom:0; left:0; right:0;margin: auto;
+    width: 100%; min-width:840px; max-width:1440px; height: 0; 
+    /* height 0으로 해야하는 이유 : adCon보다 더 위에 있기 때문에, adcon 영역에 태그를 걸 경우, slide_btn에 걸리는 영역은 선택이 안됨.  */
+  }
 
-.slide_btn {
-  position:absolute;
-  top:0; bottom:0;
-  left:0; right:0;
-  margin:auto;
-  width:100%;
-  min-width:940px;
-  max-width:1440px;;
-  height:0;
-}
+  .slide_btn button {
+    width: 60px; height: 40px; 
+    background-color: #0cc;
+  }
+  .slide_btn .next{float: right;}
+  .slide_btn .prev{float: left;}
 
-.slide_btn button {
-  width:60px; height:40px;
-  background-color: aquamarine;
-}
-
-.slide_btn .next {
-  float:right;
-}
-
-.slide_btn .prev {
-  float:left;
-}
-
-#adCon_01 {
-  width:780px; height:400px;
-  margin:auto;
-  background-color: #BBB;
-}
-
-/* new box */
-#newBox {
-  position:relative;
-  width:100%;
-  height:700px;
-  padding-top:62px;
-  box-sizing: border-box;
-  background-color: #FFF;
-}
-
-.area_title {
-  width:940px; height:70px;
-  margin:auto;
-  background-color:#AAA;
-}
-
-.area_indicator {
-  position:absolute;
-  bottom:70px; left:0; right:0;
-  width:140px; height:30px;
-  margin:auto;
-  /*background-color:#AAA;*/
-}
-
-.area_indicator li {
-  float:left;
-  margin-left:25px;
-  border-radius: 50%;
-  background-color: #AAA;
-}
-
-.area_indicator li button {
-  width:30px; height:30px;
   
-}
-
-.area_indicator li button:focus {
-  border-radius: 50%;
-  background-color: #666;
-}
-
-.area_content {
-  width:940px; height:370px;
-  margin:48px auto 0; 
-  background-color:#AAA;
-}
-
-.area_content ul {
-  width:100%; height:100%;
-}
-.area_content li {
-  float:left;
-  width:300px; height:370px;
-  margin-left:20px;
-  background-color: cyan;
-}
+  #adCon_01 {width : 780px; height:400px; 
+    margin:auto;
+    background-color: #fff;}
 
 
-/* sub box */
+
+/* newBox------------------------------ */
+#newBox {
+  position : relative;
+  width:100%; height:700px; 
+  padding-top:62px; box-sizing:border-box; background-color:#eee;}
+  .area_title {width : 940px; height:70px; 
+    margin : auto; 
+    background-color: #ccc;}
+
+  .area_indicator {
+    position : absolute;
+    bottom : 70px; left:0; right:0;
+    width : 140px; height: 30px ;
+    margin : auto; background-color: #ccc;}
+
+  .area_content {width : 940px ; height:370px ;
+    margin : auto;
+    margin:48px auto 0;
+    background-color: #ccc;}
+
+  .area_content ul {width: 100%; height:100%;}
+  .area_content li {
+    float:left; 
+    margin-left:20px;
+    width: 300px; height: 370px; background-color: #0cc;}
+ 
+
+
+/* subBox------------------------------ */
 #subBox {
   position:relative;
-  width:100%;
-  height:350px;
-  margin:auto;
-  /*
-  padding-top:50px;
-  box-sizing: border-box;
-  */
-  background-color: #777;
-}
+  width:100%; height:350px; 
+  background-color: #ddd;}
+  
+  #subBox > .area {
+    position:absolute; bottom :0; left:0; right:0;
+    height:300px;
+    margin:auto;
+    background-color: #eee;}
 
-#subBox > .area {
-  position:absolute;
-  bottom:0; left:0; right:0;
+    .subBox_area {
+      float:right;
+      width : 400px; height: 200px;
+      margin-top: 52px; margin-right: 70px;
+      background-color: #0cc;}
 
-  height:300px;
-  margin:auto;
-  background-color: #CCC;
-}
+    .subBox_area_img {
+      float:left;
+      width: 460px; height: 300px;
+    background-color: #0cc;}
 
-.sub_area {
-  float:right;
-  width:400px; height:200px;
-  margin-top:52px;
-  margin-right:70px;
-  background-color: cyan;
-}
-.sub_area_img {
-  float:left;
-  width:460px; height:300px;
-  background-color: cyan;
-}
+/* bestBox------------------------------ */
+#bestBox {width:100%; height:700px; 
+  padding-top:175px; box-sizing:border-box;
+  background-color:#aaa;}
+  #bestBox > .area { height: 380px;
+  background-color: #999;}
+    .best_area {
+      float:left;
+      width: 230px; height: 380px;
+      background-color: #fa0;}
+    .best_card_list {
+      float:right;
+      width: 800px; height: 380px;
+      background-color: #fff;}
+
+    .best_card_list ul {width: 100%; height: 100%;}
+    .best_card_list li {
+      float: left;
+      width: 240px; height: 380px;
+      margin-left: 40px;
+      background-color: #0cc;
+    }
+ 
 
 
-/* best box */
-#bestBox {
-  width:100%;
-  height:700px;
-  padding-top:175px;
-  box-sizing: border-box;
-  background-color: #FFF;
-}
-
-#bestBox > .area {
-  height:380px;
-  margin:auto;
-  background-color: #CCC;
-}
-
-.best_area {
-  float:left;
-  width:230px; height:380px;
-  background-color: yellow;
-}
-.best_card_list {
-  float:right;
-  width:800px; height:380px;
-}
-
-.best_card_list ul {
-  width:100%; height:100%;
-}
-
-.best_card_list li {
-  float:left;
-  width:240px; height:380px;
-  margin-left:40px;
-  background-color: cyan;
-}
-
-/* gallery box */
+/* galleryBox------------------------------ */
 #galleryBox {
-  height:750px;
-  padding-top:75px;
-  box-sizing: border-box;
-  background-color: #CCC;
-}
-
-#galleryBox .area_title {
-  background-color: #FFF;
-}
-
+  width:100%; height: 750px; 
+  padding-top: 75px; box-sizing: border-box; background-color:#999 ;}
+#galleryBox .area_title {background-color: #fff;}
 #galleryBox .area_content {
   position:relative;
-  height:420px;
-  background-color: #777;
+  height: 420px; background-color: #777;}
+.gall_area_img {
+  float: left;
+  width: 540px; height: 420px;
+  background-color: #0cc;
+}
+.gall_area_list {
+  float:right;
+  position:absolute; right:0; bottom :0;
+  width: 320px; height: 270px;
+  background-color: #0cc;
 }
 
-#galleryBox .gallery_image {
-  width:540px; height:420px;
-  background-color: cyan;
-}
 
-#galleryBox .gallery_list {
-  position:absolute;
-  bottom:0; right:0;
-  width:320px; height:270px;
-  background-color: cyan;
-}
-
-/* sponsor box */
-#sponsorBox {
-  width:100%;
-  height:100px;
-  padding: 10px 0;
-  box-sizing: border-box;
-  background-color: #666;
-}
-
-.sponsor {
-  width:940px;
-  height: 80px;
+/* sponserBox------------------------------ */
+#sponserBox {width:100%; height:100px; 
+  padding:10px 0; box-sizing: border-box;
+  background-color: #777;}
+.sponsor_area {
+  max-width : 940px; height: 80px;
   background-color: #fff;
 }
 
-.sponsor li {
-  float:left;
-  width:140px; height:80px;
-  margin-left:20px;
-  background-color:cyan;
+.sponsor_area ul {
+  width:100%; height: 100%;
+  
   overflow: hidden;
+  background-color: #fff;
 }
 
-
-/* footer box */
-#footerBox {
-  height:450px;
-  padding-top:68px;
-  box-sizing: border-box;
-  background-color: #222;
+.sponsor_area li {
+  float:left;
+  width: 140px; height: 80px;
+  margin-left: 20px;
+  background-color: #0cc;
 }
 
-.footer_area {
-  width:940px;
-  height:auto;
-  margin:auto;
-  /* background-color: rgba(255,255,255,0.7); */
+/* footerBox------------------------------ */
+#footerBox {width:100%; height:450px; 
+  padding-top: 68px;box-sizing: border-box;
+  background-color:#555 ;}
+.area_foot {
+height: auto;
+margin-bottom: 70px;
 }
 
-.info_logo {
-  width:120px; height:70px;
-  margin-bottom:45px;
-  background-color: #CCC;
+.info_logo{
+  width: 120px;height: 70px;
+  margin-bottom: 45px;
+  background-color: #aaa;
 }
-
 .info_company {
-  position:relative;
-  padding-bottom:70px;
-  box-sizing: border-box;
-  width:940px; height:200px;
-  background-color: #666;
+  position :relative;
+  width: 100%; height: auto;
+  background-color: #aaa;
 }
 
-.address {
-  position:absolute;
-  top:0; left:0;
-  width:500px; height:200px;
-  background-color: cyan;
+.info_area {
+  width: 500px; height: 200px;
+  background-color: #0cc;
 }
 
-.sns {
-  position:absolute;
-  width:200px; height:160px;
-  top:40px; right:0;
-  background-color: cyan;
+.info_family_site {
+  position : absolute; right:0; bottom:0;
+  width: 200px;height: 160px;
+  background-color: #0cc;
 }

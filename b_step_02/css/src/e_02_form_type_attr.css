@@ -1,0 +1,54 @@
+/* e_02_form_type_attr.css */
+
+form {
+  width: 100%; height:auto;
+  padding:1rem; box-sizing: border-box;
+  background-color: #fff;
+}
+
+fieldset {
+  margin-bottom: 2rem;
+}
+legend {
+  line-height: 130%; padding: 1rem; 
+}
+
+fieldset > div {
+  width: 100%; height: auto; 
+  margin-bottom:1rem; padding:10px; box-sizing: border-box;
+  border-bottom:1px solid #adf;
+}
+
+.usr_id {font-weight: bold;}
+.input_text { width:500px; height:30px; text-indent:0.5rem; }
+#usrId::placeholder,
+#usrPw::placeholder { color:#f00; font-weight: 700; }
+
+.img_btn { height:20px; }
+
+textarea { 
+  width:500px; height:50px;
+  resize:horizontal;/* both || vertical || horizontal || none */
+}
+
+select {
+  width:300px; height:auto;
+  font-size:1.5rem; color:#07a;
+  text-indent:0.5rem;  
+}
+/* option:nth-child(1) {
+  background-color: #add;
+  margin-bottom:10px;
+}
+option:nth-child(2) {
+  color:#fff; font-size:1.3rem;
+  background-color: #f77;
+} */
+
+button {
+  border:1px solid #3aa;
+  padding:0.2rem 1rem;
+  border-radius:0.2rem;
+  background-color: #ddd;
+  cursor: pointer;
+}

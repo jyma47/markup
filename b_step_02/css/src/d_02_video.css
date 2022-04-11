@@ -1,0 +1,12 @@
+/* d_02_video.css */
+
+.video_01, 
+.video_02{
+  width:100%; height:auto;  
+}
+.ex_wrap {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: url("../../img/background/kristaps-ungurs-RlBKSJrmWr0-unsplash.jpg");
+}

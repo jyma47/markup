@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- d_01_audio.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap">
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/d_01_audio.css">
+
+  <link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+
+  <title>d_01_audio</title>
+</head>
+<body>
+  <!-- layout -->
+  <div class="code_exam">
+    <h1><a href="./a_content.html">웹표준</a></h1>
+    <hr />
+    <div class="part">
+      <h2>audio 사용하기</h2>
+      <div class="ex_wrap">
+        <!-- <audio src="../multi/audio/bensound-ukulele.mp3" controls></audio> -->
+        <audio preload controls>
+          <source src="../multi/audio/bensound-ukulele.ogg" type="audio/ogg" />
+          <source src="../multi/audio/bensound-ukulele.mp3" type="audio/mp3" />
+          <p>현재 사용중인 브라우저는 사운드가 재생되지 않는 기능을 가지고 있습니다. <br /> 
+             <a href="https://google.com/chrome">최신브라우저</a>를 설치하시고 사용해 주시기 바랍니다.
+          </p>
+        </audio>
+        <!-- 
+        <button type="button">play</button>
+        <button type="button">pause</button> 
+        -->
+
+      </div>
+    </div>
+  </div>
+  <!-- javascript -->
+</body>
+</html>

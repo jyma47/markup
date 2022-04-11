@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- e_01_form_basic.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap">
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/e_01_form_basic.css">
+
+  <link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+
+  <title>e_01_form_basic</title>
+</head>
+<body>
+  <!-- layout -->
+  <div class="code_exam">
+    <h1><a href="./a_content.html">웹표준</a></h1>
+    <hr />
+    <div class="part">
+      <h2>form 기본형식이해</h2>
+      <div class="ex_wrap">
+        <form action="#" method="POST">
+          <!--
+             action : 어디에 자료를 보낼 것인가?
+             method : 공개용(get)으로?, 보안용(post)? 
+           -->
+          <fieldset>
+            <legend>필수양식</legend>
+            <label for="addr">아이디 입력</label>: 
+            <input type="text" id="addr" name="user_addr" value="" />
+          </fieldset>
+          <fieldset>
+            <legend>선택양식</legend>
+            <div>
+              <input type="checkbox" id="ck" name="ck_send" value="맥주" />
+              <label for="ck">선택항목</label>
+            </div>
+            <div class="select_list clearfix">
+              <ol>
+                <li><input type="radio" id="select_01" name="send" value="남성" /></li>
+                <li><input type="radio" id="select_02" name="send" value="여성" /></li>
+              </ol>
+              <ul>
+                <li><label for="select_01">남성</label></li>
+                <li><label for="select_02">여성</label></li>
+              </ul>
+            </div>
+            <div>
+              <label>
+                내용을 작성하세요 :
+                <input type="text">
+              </label>
+            </div>
+            
+          </fieldset>
+          <fieldset>
+            <legend>가입버튼</legend>
+            <button type="button">확인</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- javascript -->
+</body>
+</html>

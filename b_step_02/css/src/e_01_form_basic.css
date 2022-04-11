@@ -1,0 +1,16 @@
+/* e_01_form_basic.css */
+
+form {
+  width: 40%; height:auto; min-height: 200px; background-color: #fff;
+}
+
+button {
+  padding: 0.3rem 2rem;
+  border:1px solid #aaa;
+  background-color: #adf;
+}
+
+.select_list ol,
+.select_list ul{
+  float:left;
+}

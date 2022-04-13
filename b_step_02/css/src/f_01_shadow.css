@@ -1,0 +1,59 @@
+/* f_01_shadow.css */
+
+.code_exam .box_shadow {  padding:1.875rem; }
+
+.box_shadow > li {
+  width:368px; height:150px;
+  width:23rem; height:9.375rem;
+  margin-bottom:50px;
+  margin-bottom:3.125rem;
+  padding:1.25rem; box-sizing: border-box; border:0; 
+  font-size:1.5rem; line-height:1.3;
+  background-color: #fa0;
+}
+
+/* box-shadow: x축이동 y축이동 번짐의정도 (확장범위) 색상; */
+.box_shadow > li:nth-child(1) {  box-shadow: 0.625rem 0 0 #05a; }
+.box_shadow > li:nth-child(2) {  box-shadow: -0.625rem 0 0 #05a; }
+.box_shadow > li:nth-child(3) {  box-shadow: 0 0.4375rem 0 #05a; }
+.box_shadow > li:nth-child(4) {  box-shadow: 0 -0.4375rem 0 #05a; }
+.box_shadow > li:nth-child(5) {  box-shadow: 0.625rem 0.9375rem 0 #05a; }
+.box_shadow > li:nth-child(6) {  box-shadow: 1.25rem 1.25rem 0.3125rem #05a; }
+.box_shadow > li:nth-child(7) {  box-shadow: 1.25rem 1.25rem  0 0.3125rem #05a; }
+.box_shadow > li:nth-child(8) {  box-shadow:inset 0.3125rem 0.3125rem  0.625rem #05a; }
+
+
+/* text-shadow: x축 y축 번짐의정도 색상; */
+.text_shadow > li {
+  width: 30rem; height: 10rem; 
+  padding:3rem; box-sizing: border-box;
+  font-size:1.3rem; line-height:2; 
+  color:#fa0; font-weight: 700;
+  background-color: #fff;
+}
+
+.text_shadow > li:nth-child(1) { text-shadow: 3px 0 0 #333;}
+.text_shadow > li:nth-child(2) { text-shadow: 0 3px 0 #333;}
+.text_shadow > li:nth-child(3) { text-shadow: 2px 5px 0 #333;}
+.text_shadow > li:nth-child(4) { text-shadow: -2px -15px 0 #333;}
+.text_shadow > li:nth-child(5) { text-shadow: 2px 5px 10px #333;}
+.text_shadow > li:nth-child(6) { text-shadow: -2px -2px 2px #333, 
+                                              1px 1px 1px rgba(51,51,51,0.5);}
+
+/* filter:기능(); */
+.filter_set li {
+  width:300px; height:150px;
+  margin-bottom:5rem;
+  padding:3rem; box-sizing: border-box;
+  border:1px solid #777;
+  background-image: url("../../img/icon_color/002-color-palette.png");
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: 50% 50%;
+}
+
+.filter_set li:nth-child(1) { box-shadow:5px 5px 5px rgba(51,51,51,0.5); }
+.filter_set li:nth-child(2) { filter:drop-shadow(5px 5px 10px rgba(200,0,0,0.7) ); }
+.filter_set li:nth-child(3) { filter:blur(50px); }
+.filter_set li:nth-child(4) { filter:hue-rotate(45deg) }
+.filter_set li:nth-child(5) { filter:sepia(); }

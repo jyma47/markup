@@ -1,0 +1,75 @@
+/* e_03_selector.css */
+.ex_wrap {margin-bottom: 1rem;}
+.ex_wrap > dl {
+  width: 500px; height: auto;
+  padding: 0.5rem; background-color: #fff;
+}
+ 
+.ex_wrap dt { 
+  width:100%; height:auto; padding:0.5rem; box-sizing:border-box;
+  background-color: #acf; cursor: pointer;
+}
+.ex_wrap dd { 
+  display: none;
+  width:100%; height:auto; padding:0.7rem; box-sizing:border-box;
+  background-color: #fac; 
+  border-bottom:1px solid #333;
+}
+
+/* .ex_wrap > dl:hover > dd { display:block; } */
+/* .siblings_01 dt:hover + dd { display:block; } */
+.siblings_01 dt:hover ~ dd { display:block; }
+
+/* .siblings_02 dt:hover ~ dd {display: block;} */
+.siblings_02 dt:hover + dd {display: block;}
+
+/* =========================================== */
+
+.smartphone_select {
+  width: 100%; height: auto;
+  margin-top: 1rem; padding: 0.5rem; box-sizing: border-box;
+  background-color: #fff;
+}
+
+.smartphone_select li {
+  width:300px; height:30px; 
+  line-height: 30px;
+  /* background-color: #aff; */
+}
+.smartphone_select input { 
+  position: absolute; z-index: -1; width: 0; height: 0; overflow: hidden; }
+
+.smartphone_select label {
+  display:inline-block;  width: 80%; height: 100%; cursor: pointer;}
+.smartphone_select i {
+  margin-right:0.5rem; color:#999; font-size: 1.3rem;
+}
+
+.smartphone_select input:checked + label { font-weight: 700; }
+.smartphone_select input:checked + label > i { color:#f00; }
+
+/* ============================ */
+.select {width: 100%; margin-bottom: 1rem; border-bottom: 1px solid #000;}
+
+.select button { margin:0.3rem; }
+[type] { color:#fff; font-weight: 700; border:1px solid #f7a;}
+button[type="submit"] { background-color: #7ac; padding:0.3rem 1rem; }
+button[type="reset"] { background-color: #ca3; padding:0.3rem 2rem; }
+button[type^="b"] { background-color: #f53; padding:0.3rem 2rem; }
+button[type$="n"] { 
+    background-color: #f53; padding:0.3rem 5rem; border-top-color:#333; }
+
+
+[class] { border-radius:0.3rem;}
+
+[id$="Box"]{ background-color: #ddd; }
+[class*="ex"]{ background-color: #ddd; }
+
+/*
+  속성선택자 : []내부에 요소의 속성을 담는 형태
+  [속성명] {}
+  [속성명="값"] {}
+  [속성명^="시작글자"] {}
+  [속성명$="마무리글자"] {}
+  [속성명*="값전체에서 포함된 글자"] {}
+*/

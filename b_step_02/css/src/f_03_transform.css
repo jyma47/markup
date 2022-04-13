@@ -1,0 +1,73 @@
+/* f_03_transform.css */
+
+.ex_wrap > div {
+  width:100%; height:auto; 
+  min-height:20rem;
+  margin-bottom:10rem;
+  border-bottom:0.0625rem solid #05a;
+  background-color: #fff;
+}
+/* translate */
+.tr { 
+  width: 6.25rem; height: 6.25rem; 
+  margin:auto; margin-bottom:5rem; color:#fff; border-radius:0.3rem;
+  background-color: #07a;}
+.tr_01:hover {transform:translateX(200px);}
+.tr_02:hover {transform:translateY(-100px);}
+.tr_03:hover {transform:translate(-100px, 50px); }
+
+/* scale */
+.sc { 
+  float:left; 
+  width:6.25rem; height:6.25rem; 
+  margin:1rem 5rem; 
+  background-color: #acf;}
+
+ .sc_01:hover { transform:scale(50%); } 
+ .sc_02:hover { transform:scale(0.5); } 
+ .sc_03:hover { transform:scale(130%); } 
+ .sc_04:hover { transform:scale(130%, 150%); } 
+
+ /* rotate 각도: deg */
+ .ro {
+   float:left;
+   width: 6.25rem; height: 6.25rem;
+   margin:3rem;
+   color:#fff;
+   background-color: #c59;
+ }
+
+ .ro_01:hover {transform: rotateZ(45deg);}
+ .ro_02:hover {transform: rotateZ(180deg);}
+ .ro_03:hover {transform: rotateX(45deg);}
+ .ro_04:hover {transform: rotateY(180deg);}
+ .ro_05:hover {transform: rotate(45deg); transition:all 300ms linear;}
+ .ro_05 > span {
+   display:block; width: 100%; height: 100%;    
+   background-color: rgba(20,20,20,0.5);  
+   transition:all 300ms linear;
+  }
+
+  .ro_05:hover > span {
+    transform: rotate(-45deg);
+  }
+  /* skew , deg */
+  .sk { 
+    width:7rem; height:7rem; 
+    margin:2rem;
+    background-image:linear-gradient(#acf, #fca);}
+    .sk_01 { transform:skewX(-45deg); transform-origin:0 100%;}
+    .sk_02 { transform:skewY(-15deg); transform-origin:0 100%;}
+    .sk_03 { transform:skew(15deg, 60deg); transform-origin:50% 50%;}
+
+
+  /* 복합기능 */
+  .mul {
+    float:left;
+    width: 8rem; height: 8rem; 
+    margin:10rem; background-color: #acf;
+  }
+
+  .multi_01:hover { transform:scale(200%) translateX(50px);}
+  .multi_02 { transform:scale(150%) rotate(45deg);}
+  .multi_02:hover { transform:scale(100%) rotate(0);}

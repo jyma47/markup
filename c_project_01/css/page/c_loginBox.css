@@ -1,0 +1,157 @@
+/* c_loginBox.css */
+
+#wrap {
+  background-image: url("../../img/login_page/login_bg.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+#loginBox {
+  width: 1100px; height: auto;
+  margin:auto; margin-top: 250px; margin-bottom:200px;
+  box-shadow:8px 8px 12px rgba(0,0,0,0.25);
+  border-radius:5px; 
+  overflow: hidden;
+  background-color: #fff;
+
+}
+
+.intro_part {
+  float:left; position: relative; z-index:100;
+  width: 460px;  height:600px;
+  padding-top: 160px; padding-right:60px; box-sizing:border-box;
+  text-align: right;
+  overflow: hidden;
+  background-color: #aca;
+  background-image: url("../../img/login_page/intro_part_img.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+.intro_inner {
+  float:right;
+  width: 250px; height:auto;
+  color:#fff; 
+}
+
+.company_logo { 
+  display:inline-block;
+  width: 120px; height:70px; 
+  background-image: url("../../img/login_page/osam_sub_logo.png");
+  background-image: url("../../img/login_page/osam_sub_logo.svg");
+  background-repeat: no-repeat; background-position: 50% 50%; 
+  background-size: contain;
+}
+.intro_inner > h2 { 
+  width: 100%; height: auto; 
+  margin-top:50px; margin-bottom: 15px;
+  font-size: 40px; font-weight: 700; text-transform:capitalize;
+}
+.intro_inner > p {
+  width: 100%; height: auto;
+  font-size:18px; font-weight: 400;
+}
+
+.video_inner {
+  position: absolute; top: 0; right: 0; z-index:-1;
+  width: 100%; height: 100%; background-color: #f06;
+}
+
+.video_inner video {
+  float:right;
+  width: auto; min-width:100%; height:100%;
+}
+/* ------------------------------------------------ */
+.login_form {
+  float:left;
+  width: 640px;  height:600px;
+  padding-top:220px; box-sizing: border-box;
+  /* background-color: #fda; */
+}
+
+form,fieldset{
+  margin: 0; padding: 0; border: 0;
+}
+legend { 
+  display: block; width: 0; height: 0; 
+  position: absolute; z-index: -1; overflow: hidden;
+}
+
+form {
+  width: 460px; height: 300px;
+  margin:auto;
+  /* background-color: #fff; */
+}
+
+fieldset:nth-of-type(1) {
+  width:100%; height:130px;
+  margin-bottom: 50px;
+  /* background-color: #aca; */
+}
+fieldset:nth-of-type(2){
+  width: 100%; height: 120px;
+  text-align: center;
+  /* background-color: #a7a; */
+}
+.user_input {
+  width: 100%; height:50px;
+  margin-bottom:30px;
+  border-bottom: 2px solid #1A5D54;
+  padding-left:8px; padding-bottom: 10px;
+  box-sizing: border-box;
+}
+.user_input:last-child {  margin-bottom: 0; }
+.user_input label { float:left; margin-right: 30px;}
+.user_input input { 
+  float:left; width:340px; height: 100%; 
+  border:0; padding: 0; 
+  font-size: 1rem; color:#757575; text-indent:8px;
+}
+
+.icon {
+  display:block; width: 40px; height: 40px; 
+  background-repeat: no-repeat;
+  background-size: contain; background-position: 50% 50%;
+}
+
+label[for="usrMail"] i {
+  background-image: url("../../img/login_page/mail.png");
+  background-image: url("../../img/login_page/mail.svg");
+}
+label[for="usrPw"] i {
+  background-image: url("../../img/login_page/key.png");
+  background-image: url("../../img/login_page/key.svg");
+}
+
+.btn_inner {width: 100%; height: auto;}
+input[type="submit"] {
+  width: 300px; height: 45px;
+  margin-bottom: 34px;
+  border:0; border-radius:8px;
+  color:#fff; font-size:22px; font-weight: 700;
+  background-color: #1a5d54;
+  cursor: pointer;
+}
+
+.btn_inner a {
+  display:inline-block;
+  font-size:16px;  background-color: #fff;
+}
+.btn_inner a:nth-of-type(1) {
+  padding:12px 10px; margin-right:30px;
+}
+.btn_inner a:nth-of-type(2) {
+  padding:12px 25px;
+  border:1px solid #333;
+  box-shadow:0 4px 4px rgba(0,0,0,0.25);
+  border-radius:8px;
+}
+
+input[type="submit"]:hover { box-shadow:0 8px 8px rgba(0,0,0,0.25);}
+.btn_inner a:hover { font-weight: 700; color:#1a5d54;}
+
+input[type="submit"]:focus { 
+  border:3px solid #1a5d54; box-sizing: border-box; 
+  color:#1a5d54;
+  outline-offset: 10px;
+  background-color: #fff; }

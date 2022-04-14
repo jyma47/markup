@@ -1,0 +1,10 @@
+/* a_wrap.css */
+
+
+#wrap {
+  /* width:100%;  */
+  /* min-width:960px;  */
+  width: 1440px;
+  height:auto; min-height:500px;
+  margin:auto; padding-top:100px;
+}

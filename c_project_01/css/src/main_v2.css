@@ -27,8 +27,8 @@
   #logo {float:left; width: 120px; height: 70px;}
     #logo a {
       /* display: block; width: 100%;height: 100%; */
-      background-image: url("../../img/header/osam_logo.png");
-      background-image: url("../../img/header/osam_logo.svg"  );
+      background-image: url("../../img/headBox/osam_logo.png");
+      background-image: url("../../img/headBox/osam_logo.svg"  );
       /* background-repeat: no-repeat;
       background-position: 50% 50%; */
   }

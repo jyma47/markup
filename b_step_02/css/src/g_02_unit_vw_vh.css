@@ -1,0 +1,57 @@
+/* g_02_unit_vw_vh.css */
+
+.code_exam { width:600px;}
+.ex_wrap > div{  
+  height:100px; 
+  background-color: #f72 ;
+  margin:auto; margin-bottom:1rem;
+}
+.vw > div:nth-of-type(1) {
+  width:70%; 
+}
+.vw > div:nth-of-type(2) {
+  width:200%;  
+  position: relative; top:0; left:50%;
+  transform:translate(-50%);
+}
+.vw > div:nth-of-type(3) {
+  width:30vw;
+  position: relative; top:0; left:50%;
+  transform:translate(-50%);
+}
+.vw > div:nth-of-type(4) {
+  width:50vw; 
+  position: relative; top:0; left:50%;
+  transform:translate(-50%);
+}
+
+.vw > div:nth-of-type(5) {
+  width:10vw; height:10vw;
+}
+
+.vw > div:nth-of-type(6) {
+  width:10vw; height:10vw;
+  max-width:12.5rem; max-height:12.5rem;
+  min-width:6.25rem; min-height:6.25rem;
+}
+
+
+
+
+/* ============================== */
+.other > div {width:100px; background-color: #07a; color:#fff;}
+.other > div:nth-of-type(1) { height:100px; }
+.other > div:nth-of-type(2) { height:200px; }
+.other > div:nth-of-type(3) { height:10vh; }
+.other > div:nth-of-type(4) { font-size:2vw; line-height:2.4vw; color:#fa0;}
+.other > div:nth-of-type(5) { font-size:5vh; line-height:2.4vw; color:#fa0;}
+
+
+
+/*
+  vw 단위는 브라우저의 가로 크기를 기준으로 %값을 재는 단위
+  vh 단위는 브라우저의 세로 크기를 기준으로 %값을 재는 단위
+  %값 계산방법
+  사용요소의가로크기 / 기준크기 * 100 -> %
+  200px  / 500px * 100 -> 40%
+*/

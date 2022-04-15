@@ -1,0 +1,39 @@
+/* b_smartphone.css */
+
+@supports (background-color:var(--color-red)) {
+  /* smartphone ------------------------------------------------ */
+  @media screen and (max-width:767px){
+  /* 기준디바이스 크기 : 320px */
+  /* size / 기준 * 100  => ?vw  */
+  
+  #wrap {
+    width: 100%;  min-width:auto; height:auto;
+    
+  }
+  
+  #headBox { 
+    position: fixed; top: 0; left: 0; z-index: 1400;
+    width: 100%; height: 6.25rem; 
+    /* background-color: #cacaca; */
+    background-color: rgba(167, 8, 8, 0.329);
+  }
+  
+  #viewBox { 
+    width: 100%; /* height: 25rem; */
+    height:125vw; min-height:25rem;
+    padding-top: 6.25rem;
+    background-color: #FC7676;
+    background-color: var(--color-red);
+  }
+  
+  #contentBox { 
+    width: 100%; height:auto; min-height:8.75rem; 
+    background-color: #BCF88D;
+  }
+  
+  #supportBox { display: none; }
+  #footBox {display: none;}
+    
+  } /* @media screen and (max-width:767px)  */
+  
+  }

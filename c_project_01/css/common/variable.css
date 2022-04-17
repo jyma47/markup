@@ -1,0 +1,36 @@
+:root {
+  font-size:16px; 
+  /* Color styles */
+  --primary_01: rgba(26, 93, 84, 1);
+  --primary_02: rgba(131, 76, 51, 1);
+  --light_gray_01: rgba(196, 196, 196, 1);
+  --light_gray_02: rgba(170, 170, 170, 1);
+  --light_gray_03: rgba(117, 117, 117, 1);
+  --deep_gray: rgba(80, 80, 80, 1);
+  --black_01: rgba(51, 51, 51, 1);
+  --black_02: rgba(23, 23, 23, 1);
+  --white: rgba(255, 255, 255, 1);
+  --gray_op: rgba(85, 85, 85, 0.3);
+  --yellow_01: rgba(255, 189, 85, 1);
+  --yellow_02: rgba(247, 233, 211, 1);
+  --white_02: rgba(239, 239, 239, 1);
+
+  /* Text-size styles */
+  /* base size: content_03 (16px) */
+  --title_02: 2.5rem;
+  --title_03: 2.25rem;
+  --title_04: 1.75rem;
+  --title_05: 1.38rem;
+  --content_01: 1.38rem;
+  --content_02: 1.12rem;
+  --content_03: 1rem;
+  --content_04: 0.75rem;
+  --content_04-1: 0.75rem;
+  --button_text: 1.38rem;
+  --style_code_01: 0.56rem;
+  --style_code_02: 0.62rem;
+  --style_code_03: 0.75rem;
+
+  /* Effect styles */
+  --shadow_01:  0px 4px 4px rgba(0, 0, 0, 0.25);
+}

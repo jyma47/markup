@@ -1,0 +1,235 @@
+/* main_page/b_smartphone.css */
+
+@media screen and (max-width:599px) {
+  /* 기준 디바이스 크기 : 20rem  */
+  
+  
+/* #wrap { }
+   ====================================================*/
+
+/* #headBox 
+   ==================================================== */
+  #headBox { height: 3.125rem; padding:0.5rem 0.625rem; }
+ 
+  .area_head {height: 100%;}
+  #logo {
+    float:none;
+    position: absolute; top:0.5rem; left:50%;
+    width: 3.75rem; height: 2.1875rem;
+    transform:translateX(-50%);
+  }
+
+  .nav_btn {
+    display:block; 
+    position: relative; z-index:100; 
+    width:2.1875rem; height:2.1875rem; }
+
+  #navBox {
+    display: none;
+    position: absolute; top: 0; left: 0; z-index:10;
+    width: 100%; height:100vh;
+    padding:0.5rem 1.875rem; box-sizing: border-box;
+    background-image: url("../../img/headBox/navBox/smartophone_nav_origin.png");
+    background-size: cover;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+  }
+  #navBox:before,
+  #navBox::before {
+    content:""; display: block; 
+    position: absolute; top: 0; left: 0; z-index: -1;
+    width: 100%; height: 100%;
+    background-color:rgba(26, 93, 84, 1);
+    opacity:0.85;
+  }
+
+  #navBox h2 { 
+    position: relative; z-index:100;
+    width: 3.75rem; height: 2.1875rem; 
+    margin:auto; margin-bottom: 1.875rem;
+    background-image: url("../../img/headBox/navBox/logo_white.png");
+    background-image: url("../../img/headBox/navBox/logo_white.svg");
+    background-repeat: no-repeat; background-position: 50% 50%;
+    background-size: contain;
+  }
+  .unb, .gnb {float:none; width:100%; min-width:auto; height:auto;}
+  .unb {width:80%; margin:auto; margin-bottom:16px; border-bottom:1px solid #fff;}
+  .unb li {
+    float:left; width:calc(50% - 10px); height:auto; 
+    margin:0; margin-bottom:0.625rem;}
+  .unb li:nth-child(1) {float:left;}
+  .unb li:nth-child(2n) {float:right;}
+  .unb a {
+    height:1.875rem; 
+    line-height:1.875rem; font-size: 1rem;}
+
+  .gnb ul {float:none; width: 100%; height:auto; }
+  .gnb li {
+    float:none; width:100%; height:3.125rem;
+    margin-bottom:0.9375rem; padding: 0;  }
+  
+  .unb a { color:#fff;} 
+  .gnb a { 
+    display: block; width: 100%; height: 100%; 
+    padding: 0;  border:0.0625rem solid #fff; 
+    border-radius: 0.3125rem;
+    line-height:3.125rem; color:#fff;  
+    font-size: 18px; font-weight: 400;
+  }
+
+
+/* #slideBox 
+    ==================================================== */
+    #slideBox   { 
+      min-height:31.25rem; max-height:900px;
+      padding-top: 3.125rem;
+    }
+
+  /* ---------- */
+  .slide_btn { 
+    position: absolute; top: 0; bottom:auto; z-index: 1000;
+    width:100%; min-width: auto; height:0;
+    margin:auto;
+  }
+  .slide_btn button{ 
+    width:30px; height:100vh; max-height:900px;
+    background-image: none;
+    background-repeat: no-repeat;   
+    background-color: rgba(0,0,0,0.5);
+    }
+  .slide_area {padding: 0; background-image: none;}
+  .slide_content { 
+    position: relative;
+    width: 100%; height: 100%; 
+    margin:auto; }
+  .slide_content_part {
+    left:50%; transform:translate(-50%);
+  }
+  .slide_img_part {
+    width: 100%; height: 100%;
+  }
+  .slide_01 { background-size: cover;}
+
+/* #newBox 
+    ====================================================  */
+  #newBox { 
+    height:100vh; min-height:37.5rem; max-height:37.5rem;
+    padding-top: 5rem; padding-bottom: 5.625rem;
+  }
+  .area_title {
+    width: 100%; height:auto; 
+    text-align: center; font-size:1.75rem; 
+  }
+
+  .newBox_area{ width:50.875rem; height:20rem; }
+  .newBox_area li { width: 16.25rem; margin-left: 1.0625rem;  }
+
+
+/* #subBox 
+    ====================================================  */
+  #subBox { height:100vh; min-height: 31.25rem; background-color: #fff; }
+  #subBox > .area { width: 100%; min-width:auto; height:100%; }
+  .sub_area { z-index:100; left:50%; bottom:25%; width: 90%; transform:translateX(-50%); }
+
+  .sub_area p { min-height:5rem; margin-bottom:2.1875rem; }
+  .sub_area_btn {height:auto;}
+  .sub_area_btn a {display:block; float:none;  margin-bottom: 0.875rem; }
+  .sub_area_btn a:nth-child(1){
+    width:100%; height:3.75rem; 
+    line-height:3.75rem; font-weight: 700;}
+  .sub_area_btn a:nth-child(2){width:100%; height:2.8125rem;}
+
+  .sub_area_img {
+    width: 100%; height:100%;
+    background-image:url("../../img/main_page_re/mobile/e_subBox/sub_img.png");
+    opacity: 0.3;
+  }
+
+/* #bestBox 
+    ====================================================  */
+    #bestBox { 
+      position: relative; 
+      height:auto; min-height: 43.75rem;
+      padding:0; padding-bottom: 12.5rem; 
+    }
+    
+    #bestBox .area {
+       
+      width: 300px; min-width: auto; height:auto; }
+    .best_area {
+      float:none; 
+      width: 100%; height: auto; margin-bottom: 54px;}
+    .best_area h2{height: auto;}
+    .best_area p{height: auto;}
+    
+    .best_btn { display: none;}
+    .more_btn {
+      position: absolute; bottom:90px; left: 50%; 
+      width: 140px;
+      transform: translateX(-50%);
+    }
+    .best_card_list { float:none; width: 100%; height: auto;}
+    .best_card_list ul {width: 100%;}
+    .best_card_list li:first-child,
+    .best_card_list li {float:none; margin:auto; margin-bottom:60px; }
+    .best_card_list li:nth-child(n+4) { display:none; }
+    .best_card_list li:hover { transform: scale(1);}
+
+/* #galleryBox 
+    ====================================================  */
+    #galleryBox {  
+      height:auto; min-height: 61.25rem; 
+      padding-top: 1.5rem; padding-bottom: 8.75rem;
+    }
+    #galleryBox .area_title { text-align: center; }
+    #galleryBox  .area_content {
+      width:300px;
+    }
+    .gallery_main_content  {
+      float:none; width:100%;
+      margin:auto;  margin-bottom: 20px;
+    } 
+    #galleryBox   .gallery_list {
+      float:none; position: static;
+      width: 100%; height: auto;
+      margin:auto;
+    }
+    
+    .gallery_list li {  width: 100%;}
+    
+
+/* #sponsorBox 
+    ====================================================  */
+    #sponsorBox { height: 25rem; }
+
+    #sponsorBox h2 {
+      position: static;
+      width: 100%; height: auto; 
+      margin-bottom: 20px; padding-top: 40px;
+      font-size:28px; font-weight: 700;
+      text-align: center;
+    }
+    
+    .sponsor_area {
+      overflow: hidden;
+      width: 300px; height:270px;   
+      padding:0 10px;
+    }
+    .sponsor_area ul {
+      width:100%; height: auto; 
+    }
+    .sponsor_area li {
+      float:left; width: 140px; height: 80px; 
+      padding:10px 0; 
+      margin-right:20px;
+    }
+    .sponsor_area li:nth-child(2n){margin-right: 0;}
+
+/* #footBox 
+    ====================================================  */
+    #footBox { height: 26.5625rem; }
+    .info_logo { margin:auto; margin-bottom: 50px;}
+    .company_content { width: 0; height: 0; overflow: hidden;}
+    .social_family {float:none; width: 160px; height:auto; margin: auto;}
+/* =========================================== */
+} /* @media screen and (max-width:37.4375rem) */

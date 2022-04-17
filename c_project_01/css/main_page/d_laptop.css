@@ -1,0 +1,91 @@
+/* main_page/d_laptop.css */
+
+@media screen and (min-width:64rem) and (max-width:89.9375rem) {
+  /* 기준 디바이스 크기 : 64rem  */
+  
+
+/* #wrap
+   =================================================== */
+
+  
+/* #headBox 
+   =================================================== */
+#headBox {height: 6.25rem; padding:1.25rem 2.5rem 0.625rem;}
+#logo { width: 7.5rem;height: 4.375rem; }
+
+/* #slideBox 
+   =================================================== */
+  .slide_set   { 
+      min-height: 37.5rem; 
+      padding-top: 6.25rem;
+    }
+    
+    .slide_btn button{
+      transform: translateY(-50%);
+    }
+    
+
+/* #newBox 
+   =================================================== */
+#newBox { 
+  height:43.75rem; 
+  padding-top: 4.0625rem; padding-bottom: 4.375rem;
+}
+.area_title { width:58.75rem; }
+
+
+/* #subBox 
+   =================================================== */
+#subBox { 
+  height: 21.875rem; 
+  padding-top: 10.5rem; padding-bottom: 9.5rem; padding-left:2.5rem;
+}
+
+.sub_area { right: 4.375rem; width: 25rem; }
+
+.sub_area_img {
+   float:left;
+   width: 28.75rem; height: 18.75rem;
+   transform:translateY(-1.5625rem);
+   background-image: url("../../img/main_page_re/desktop/e_subBox/sub_img.png");
+   box-shadow:1.875rem 1.5625rem 0 #EFEFEF;
+ }
+ 
+
+/* #bestBox 
+   =================================================== */
+   #bestBox { 
+      height: 43.75rem; 
+      padding: 10.9375rem 3.125rem 9.0625rem;  
+      overflow-x: hidden;
+    }
+
+/* #galleryBox 
+   =================================================== */
+#galleryBox {
+  height: 46.875rem; 
+  padding-top: 5rem; padding-bottom: 8.125rem;
+} 
+
+/* #sponsorBox 
+   =================================================== */
+   #sponsorBox { height: auto; }
+   .sponsor_area {
+     overflow: hidden;
+     width: 940px; height:100px;   
+     padding:0 10px;
+   }
+   .sponsor_area ul {
+     width:200%; height: 100%; 
+   }
+   .sponsor_area li {
+     float:left; width: 140px; height: 80px; 
+     padding:10px 0; 
+     margin-right:20px;
+   }
+
+/* #footBox 
+   =================================================== */
+#footBox    { height: 28.125rem;}
+
+}/* @media screen and (min-width:64rem) and (max-width:89.9375rem) */

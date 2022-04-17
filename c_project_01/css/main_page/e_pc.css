@@ -1,0 +1,67 @@
+/* main_page/e_pc.css */
+
+@media screen and (min-width:90rem) {
+/* 기준 디바이스 크기 : 90rem  */
+    
+    
+/* #wrap 
+    ========================================== */
+
+/* #headBox 
+    ========================================== */
+  #headBox { 
+    height: 6.25rem; 
+    padding-top: 1.25rem; padding-bottom: 0.625rem; }
+  #logo { width: 7.5rem;height: 4.375rem; }
+
+/* #slideBox 
+    ========================================== */
+  #slideBox   { 
+min-height: 43.75rem; max-height: 75rem;
+padding-top: 6.25rem;
+}
+
+
+/* #newBox 
+    ==========================================  */
+  #newBox {  
+    height:43.75rem;
+    padding-top: 4.0625rem; padding-bottom: 4.375rem;
+  }
+  .area_title { width:58.75rem; }
+
+/* #subBox 
+    ==========================================  */
+  #subBox { height: 21.875rem; }
+
+  .sub_area { right: 4.375rem; width: 25rem; }
+  .sub_area_img {
+    float:left;
+    width: 28.75rem; height: 18.75rem;
+    transform:translateY(-1.5625rem);
+    background-image: url("../../img/main_page_re/desktop/e_subBox/sub_img.png");
+    box-shadow:1.875rem 1.5625rem 0 #EFEFEF;
+  }
+/* #bestBox 
+    ==========================================  */
+  #bestBox { 
+    height: 43.75rem;
+    padding-top: 10.9375rem; padding-bottom: 9.0625rem;
+  }
+
+/* #galleryBox 
+    ==========================================  */
+  #galleryBox {
+    height: 46.875rem; 
+    padding-top: 5rem; padding-bottom: 8.125rem;
+  }
+
+/* #sponsorBox 
+    ==========================================  */
+  #sponsorBox { height: 6.25rem; }
+
+/* #footBox 
+    ==========================================  */
+  #footBox    { height: 28.125rem;}
+
+}/* @media screen and (min-width:90rem) */

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- b_02_js_variable.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap">
+  <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <!-- <link rel="stylesheet" href="../css/src/b_02_js_variable.css"> -->
+
+  <link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+
+  <title>b_02_js_variable</title>
+</head>
+<body>
+  <!-- layout -->
+  <div class="code_exam">
+    <h1><a href="./a_content.html">웹표준</a></h1>
+    <hr />
+    <div class="part">
+      <h2>javascript - variable</h2>
+      <p>변수란, 하나의 형태을 지정하여 그내용을 변수에 담는것</p>
+      <div class="ex_wrap"></div>
+    </div>
+  </div>
+  <!-- javascript -->
+  <script>
+    // es5
+    var nameSet = 'xido';
+    console.log(nameSet);
+    
+
+    nameSet = 'xidolab';
+    console.log(nameSet);
+
+    var stringPlus = '문자는';
+    var stringPlus2 = '연결이 가능하다!';
+    var stringPlus3 = ' 연결이 가능하다!';
+    console.log(stringPlus , stringPlus2);
+    console.log(stringPlus + ' ' + stringPlus2);
+    console.log(stringPlus + stringPlus3);
+
+    var stringSet = stringPlus + stringPlus3;
+    var textSet = '문자는 서로 ' + '연결이 가능하다!';
+    var otherText = nameSet + '님 반갑습니다.';
+    console.log(stringSet);
+    console.log(textSet);
+    console.log(otherText);
+
+    var num = 123;
+    var num2 = '1234';
+    console.log(num + 10); // 133;
+    console.log(num2 + 10);// 123410;
+    // ---------------------------------
+    
+    console.log( reName );
+    var reName = 'xido.design';
+    // 변수는 선언시 이전에 변수명을 호출하면 그결과는 undefined - hoisting
+    // 단, 변수명이 존재하지 않는다면 존재가 없다며 not defined
+    // ---------------------------------
+    var test;
+    console.log('test: ', test);
+    
+    test = '값을 나중에 정의';
+    console.log('test: ', test );
+    
+    var n;
+    console.log( n );
+    n=1;
+    console.log( n );
+    n=2;
+    console.log( n );
+    
+    // ---------------------------------
+    console.clear();
+    var xidoLocation = '강원도';
+    console.log(xidoLocation);
+    xidoLocation = '제주도';
+    console.log(xidoLocation);
+    //---------------------------------
+
+    // window 내부에 document 내부에 클래스이름이 ex_wrap의 첫번째(0) 가져와서 처리
+    // 내부 -> .
+    // class -> className()
+    // 순서 -> [n] : 첫번째를 0, 두번째를 1, 세번째는 2
+
+    var exWrap = document.getElementsByClassName('ex_wrap')[0];
+    var codeInner = '<span>' + xidoLocation + '</span>';
+    // exWrap.innerText = codeInner;
+    exWrap.innerHTML  = codeInner;
+    
+  </script>
+</body>
+</html>

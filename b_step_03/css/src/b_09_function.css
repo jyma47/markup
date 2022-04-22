@@ -1,0 +1,20 @@
+/* b_09_function.css */
+
+.btn {
+  width:100%; height: 30px;
+}
+
+.btn > button {
+  width: 100px; height: 100%;
+  border-radius:3px;
+  color:#fff; font-weight: 900;
+  background-color: #9ac;
+}
+
+.btn > button:hover {
+  background-color: #59a;
+}
+
+.btn > button:focus {
+  outline:2px solid #f06;
+}

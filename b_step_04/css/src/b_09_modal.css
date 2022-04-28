@@ -1,0 +1,78 @@
+/* b_09_modal.css */
+
+.modal {
+  width: 100%; height: auto;
+  background-color: #faa;
+}
+
+.modal_list {
+  width:100%; height: auto;
+  padding:0.625rem; box-sizing: border-box;
+}
+
+.modal_list li {
+  float:left;
+  width:7.5rem; height:11.25rem;
+  margin-right:1.25rem;
+  padding: 0;
+  border:0.0625rem solid #00f;
+}
+
+.modal_list li:last-child {margin: 0;}
+.modal_list button {
+  width: 100%; height: 100%;
+  background-color:#fff;
+  margin: 0;
+}
+/* ----------------------------- */
+.modal_window {
+  display: none;
+  position: fixed; top: 0; left: 0;
+  z-index: 2000;
+  width: 100%; height: 100%; 
+}
+.modal_data {
+  position: absolute; 
+  top: 50%; left: 50%; z-index: 100;
+  width: 31.25rem; height: 20rem;
+  padding:0.625rem;
+  border:0.0625rem solid #333;
+
+  background-color: #fff;
+  border-radius:0.5rem;
+  transform:translate(-50%, -50%);
+}
+
+
+.close_btn {
+  position:absolute;
+  top:-1rem; right:-1rem;
+  width: 3rem; height: 3rem;
+}
+.close_btn button {
+  width: 100%; height: 100%; 
+  background-color: #eee;
+  border:1px solid #777;
+  border-radius:100%;
+}
+.close_btn button:hover {
+  background-color: #aca;
+}
+.close_btn button:focus {
+  font-weight: 700;
+  border:5px solid #f0a;
+  outline: 0;
+  box-shadow:0.1rem 0.1rem 0.3rem rgba(0,0,0,0.5);
+}
+
+.modal_content {
+  width: 100%; height: 100%;
+  background-image: url("../../img/album/view/car.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.modal_bg {
+  width: 100%; height: 100%; 
+  background-color: rgba(0,0,0,0.7);
+}

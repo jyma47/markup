@@ -1,0 +1,113 @@
+/* b_11_tab_menu.css */
+
+.tab_area {
+  width: 100%; height:auto;
+  /* background-color: #f9f9f9; */
+}
+.tab_title {
+  width: 100%; height:30px;
+  margin-bottom:50px;
+}
+.tab_title ul {
+  width: 100%; height: 100%;
+  border-bottom: 1px solid #171717;
+}
+.tab_title li {
+  float:left;
+  width:20%; height:100%;
+  box-sizing:border-box; padding:0 0.4rem;
+}
+.tab_title button {
+  width: 100%; height: 100%;
+}
+
+.tab_title li.on button {
+  background-color: #ccc;
+  font-size:1.1rem; font-weight: 700;
+}
+
+.tab_content{
+  width: 100%; height: auto; 
+  box-sizing: border-box;
+  padding:0.5rem 1rem; padding-bottom: 7rem;
+}
+
+.tab_list {
+  width: 100%; height: auto; min-height:31.25rem;
+}
+
+.tab_list ul {
+  width: 100%; height: auto;
+}
+
+.tab_list li {
+  float:left; position:relative; 
+  width: 13.2rem; height:20rem;
+  margin:0.5rem;
+  border:1px solid #777;
+  padding:0.5rem;
+  box-sizing: border-box;
+  border-radius: 0.2rem;
+}
+
+.tab_list li.on {
+  background-color: rgba(230,240,255,0.8);
+  border:2px solid #059;
+}
+.tab_list li:hover {
+  transform: translate(-0.1rem, -0.1rem);
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0,0.3);
+}
+
+.img_con {
+  width: 100%; height: 8rem;
+  background-color: #ccc;
+  margin-bottom:0.5rem;
+  border-radius:0.2rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.tab_list dl {width: 100%; height: auto; }
+
+.tab_list dt {
+  width: 100%; height:auto;
+  font-size: 1.2rem; font-weight: 700;
+  text-transform: capitalize;
+  padding-bottom: 0.2rem; 
+  border-bottom: 1px solid #333;
+  margin-bottom: 0.4rem;
+}
+
+.text_con {
+  width: 100%; height: auto;
+  margin-bottom: 0.5rem;
+  font-size:0.875rem;
+  color:#575757;
+  word-break: keep-all;
+}
+
+.link_con {
+  position: absolute; left:50%; bottom:0.5rem;
+  width:95%; height: 2.5rem;  
+  transform:translateX(-50%);
+}
+
+.link_con a {
+  display: block; width: 100%; height: 100%;
+  border-radius:0.15rem;
+  text-align: center; line-height:2.5rem;
+  color:#fff; font-weight: 700;
+  background-color:#079;
+}
+.link_con a:hover {
+  transform: translate(-0.1rem, -0.1rem);
+  box-shadow:0.3rem 0.3rem 0.3rem rgba(0,0,0,0.3);
+}
+.link_con a:focus {
+  background-color: #057;
+  font-size: 1.1rem;
+  transform: translate(0,0);
+  box-shadow:inset 0.3rem 0.3rem 0.3rem rgba(0, 51, 70, 1);
+}

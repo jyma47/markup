@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- b_08_gallery.html -->
+<html lang="ko-KR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap">
+  <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+  
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/b_08_gallery.css">
+  <script src="../ie/modernizr-custom.js"></script>
+  
+  <link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  
+  <title>b_08_gallery</title>
+</head>
+<body>
+  <!-- layout -->
+<div class="code_exam">
+  <h1><a href="./a_content.html">jQuery 기초</a></h1>
+  <hr />
+  <div class="part" hidden>
+    <h2>갤러리</h2>
+    <div class="gallery_area">
+      <div class="gallery_content">
+        <img class="on" src="../img/album/view/car.jpg" alt="이미지 설명_01">
+        <img src="../img/album/view/car2.jpg" alt="이미지 설명_02">
+        <img src="../img/album/view/city.jpg" alt="이미지 설명_03">
+        <img src="../img/album/view/contry.jpg" alt="이미지 설명_04">
+        <img src="../img/album/view/mountain.jpg" alt="이미지 설명_05">
+      </div>
+      <ul class="gallery_list clearfix">
+        <li class="on"><button type="button"><span>gallery_01</span></button></li>
+        <li><button type="button"><span>gallery_02</span></button></li>
+        <li><button type="button"><span>gallery_03</span></button></li>
+        <li><button type="button"><span>gallery_04</span></button></li>
+        <li><button type="button"><span>gallery_05</span></button></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="part">
+    <h2>갤러리 2</h2>
+    <div class="gallery_area2">
+      <div class="gallery_content">
+        <img class="on" src="../img/album/view/car.jpg" alt="이미지 설명_01">
+        <img src="../img/album/view/car2.jpg" alt="이미지 설명_02">
+        <img src="../img/album/view/city.jpg" alt="이미지 설명_03">
+        <img src="../img/album/view/contry.jpg" alt="이미지 설명_04">
+        <img src="../img/album/view/mountain.jpg" alt="이미지 설명_05">
+      </div>
+      <ul class="gallery_list clearfix">
+        <li class="on"><button type="button">
+          <img src="../img/album/thumnail/car.jpg" alt="gallery_01">
+        </button></li>
+        <li><button type="button">
+          <img src="../img/album/thumnail/car2.jpg" alt="gallery_02">
+        </button></li>
+        <li><button type="button">
+          <img src="../img/album/thumnail/city.jpg" alt="gallery_03">
+        </button></li>
+        <li><button type="button">
+          <img src="../img/album/thumnail/contry.jpg" alt="gallery_04">
+        </button></li>
+        <li><button type="button">
+          <img src="../img/album/thumnail/mountain.jpg" alt="gallery_05">
+        </button></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <!-- javascript -->
+  <script src="../js/common/jquery-3.6.0.min.js"></script>
+  <script src="../js/common/jquery-ui.min.js"></script>
+  <script src="../js/src/b_08_gallery.js"></script>
+  <script src="../js/src/b_08_gallery_02.js"></script>
+</body>
+</html>

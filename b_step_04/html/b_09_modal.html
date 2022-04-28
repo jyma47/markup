@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- b_09_modal.html -->
+<html lang="ko-KR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap">
+  <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+  
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/b_09_modal.css">
+  <script src="../ie/modernizr-custom.js"></script>
+  
+  <link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  
+  <title>b_09_modal</title>
+</head>
+<body>
+<!-- layout -->
+<div class="code_exam">
+  <h1><a href="./a_content.html">jQuery</a></h1>
+  <hr />
+  <div class="part">
+    <h2>사용할 기능</h2>
+    <div class="modal">
+      <div class="modal_list">
+        <ul class="clearfix">
+          <li data-img="car.jpg" data-narr="modal_01: 이미지 설명">
+            <button type="button">modal_01</button>
+          </li>
+          <li data-img="car2.jpg" data-narr="modal_02: 이미지 설명">
+            <button type="button">modal_02</button>
+          </li>
+          <li data-img="city.jpg" data-narr="modal_03: 이미지 설명">
+            <button type="button">modal_03</button>
+          </li>
+          <li data-img="contry.jpg" data-narr="modal_04: 이미지 설명">
+            <button type="button">modal_04</button>
+          </li>
+          <li data-img="mountain.jpg" data-narr="modal_05: 이미지 설명">
+            <button type="button">modal_05</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="modal_window">
+        <div class="modal_data">
+          <div class="close_btn">
+            <button type="button">
+              닫기
+            </button>
+          </div>
+          <div class="modal_content">
+            <!-- 이곳에 이미지를 담을 예정 -->     
+            <p class="blind">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, rem?</p>
+          </div>
+        </div>
+        <div class="modal_bg">
+          <!-- 배경 반투명처리 -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <!-- javascript -->
+  <script src="../js/common/jquery-3.6.0.min.js"></script>
+  <script src="../js/common/jquery-ui.min.js"></script>
+  <script src="../js/src/b_09_modal.js"></script>
+</body>
+</html>

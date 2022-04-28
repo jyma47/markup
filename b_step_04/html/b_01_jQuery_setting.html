@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery 내용 설치방법</title>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1><a href="./a_content.html">jQuery</a></h1>
+    <ul class="ul_wrap">
+      <li><a href="#">li_01</a></li>
+      <li><a href="#">li_02</a></li>
+      <li><a href="#">li_03</a></li>
+    </ul>
+  </div>
+  
+  <!-- script -->
+  <script src="../js/common/jquery-3.6.0.min.js"></script>
+  <script src="../js/common/jquery-ui.min.js"></script>
+  <script>
+    // javascript
+    var wrap = document.getElementById('wrap');
+    var h1 = document.getElementsByTagName('h1')[0];
+    var ul = document.getElementsByClassName('ul_wrap')[0];
+    var listTab = ul.getElementsByTagName('li');
+
+    Array.prototype.forEach.call(li, function(data, idx){ 
+      data.addEventListener('click', function(){})
+    });
+  </script>
+  <script>
+    // jQuery
+    (function($){
+      // jQuery
+      console.log( $.fn );
+      var wrap2  = $('#wrap');
+      var hTitle = $('h1');
+      var ulWrap = $('.ul_wrap');
+      var list   = ulWrap.children('li');
+      list.on('click', function(){
+        //
+      });
+    })(jQuery);    
+  </script>
+</body>
+</html>

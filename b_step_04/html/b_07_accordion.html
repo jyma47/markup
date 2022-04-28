@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- b_07_accordion.html -->
+<html lang="ko-KR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap">
+  <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+  
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/b_07_accordion.css">
+  <script src="../ie/modernizr-custom.js"></script>
+  
+  <link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  
+  <title>b_07_accordion</title>
+</head>
+<body>
+  <!-- layout -->
+<div id="wrap">
+  <h1><a href="./a_content.html">jQuery 기초</a></h1>
+  <hr />
+  <div class="part">
+    <h2>아코디언 기본형태</h2>
+    
+    <div class="accor">
+      <dl>
+        <dt>
+          <button type="button">
+            title
+            <i class="fas fa-arrow-alt-circle-down"></i>
+          </button>
+        </dt>
+        <dd>Lorem ipsum dolor sit amet.</dd>
+        <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, nemo.</dd>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing.</dd>
+      </dl>
+      <dl>
+        <dt>
+          <button type="button">
+            title2
+            <i class="fas fa-arrow-alt-circle-down"></i>
+          </button>
+        </dt>
+        <dd>Lorem, ipsum dolor.</dd>
+        <dd>Lorem, ipsum dolor.</dd>
+        <dd>Lorem, ipsum dolor.</dd>
+        <dd>Lorem ipsum dolor sit amet.</dd>
+      </dl>
+      <dl>
+        <dt>
+          <button type="button">
+            title3
+            <i class="fas fa-arrow-alt-circle-down"></i>
+          </button>
+        </dt>
+        <dd>Lorem ipsum dolor, <br />
+            sit amet consectetur adipisicing elit.  <br />
+            Similique ex repudiandae animi quibusdam,  <br />
+            deserunt illum explicabo quae hic officiis eaque.</dd>
+      </dl>
+    </div>
+
+    <div class="accor2">
+      <ul>
+        <li>
+          <div class="nav_title">
+            <button type="butotn">nav_01</button>
+          </div>
+          <div class="sub_list">
+            <a href="#">list_1-01</a>
+            <a href="#">list_1-02</a>
+            <a href="#">list_1-03</a>
+            <a href="#">list_1-04</a>
+          </div>
+        </li>
+        <li>
+          <div class="nav_title">
+            <button type="butotn">nav_02</button>
+          </div>
+          <div class="sub_list">
+            <a href="#">list_2-01</a>
+            <a href="#">list_2-02</a>
+            <a href="#">list_2-03</a>
+            <a href="#">list_2-04</a>
+            <a href="#">list_2-05</a>
+          </div>
+        </li>
+        <li>
+          <div class="nav_title">
+            <button type="butotn">nav_03</button>
+          </div>
+          <div class="sub_list">
+            <a href="#">list_3-01</a>
+            <a href="#">list_3-02</a>
+          </div>
+        </li>
+        <li>
+          <div class="nav_title">
+            <button type="butotn">nav_04</button>
+          </div>
+          <div class="sub_list">
+            <a href="#">list_4-01</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <!-- javascript -->
+  <script src="../js/common/jquery-3.6.0.min.js"></script>
+  <script src="../js/common/jquery-ui.min.js"></script>
+  <script src="../js/src/b_07_accordion.js"></script>
+  <script src="../js/src/b_07_accordion2.js"></script>
+</body>
+</html>

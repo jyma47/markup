@@ -1,0 +1,106 @@
+/* b_07_accordion.css */
+
+#wrap {
+  width: 56.25rem; height:125rem;
+  margin:auto; 
+  background-color: #eee;
+}
+
+.part {
+  width: 80%; height: auto;
+  margin: auto; margin-top: 3rem;
+  padding:0.5rem;
+  border:0.0625rem solid #333;
+}
+
+.accor {
+  width: 100%; height: auto;
+  margin-top:1rem;
+  padding:0.2rem; box-sizing: border-box;
+  background-color: #fff;
+  border:2px solid #999;
+}
+
+.accor > dl {
+  width: 100%; height: auto;
+}
+
+.accor dt{
+  width: 100%; height:40px;
+  margin-top:5px;
+  padding: 0.5em; box-sizing:border-box;
+  border-bottom:1px solid #765;
+  background-color: #39a;
+}
+.accor > dl:nth-of-type(1) dt {margin-top: 0;}
+.accor button {
+  position: relative;
+  width: 100%; height: 100%;
+  text-align: left;
+  color:#fff;
+  font-weight: 700;
+}
+.accor i {
+  position: absolute; 
+  display:inline-block;
+  top: 0; bottom:0; right: 0;
+  font-size:1.3rem;
+  margin:auto;
+}
+
+.accor dd{
+  display: none;
+  width: 100%; height:auto;
+  padding:0.5rem; box-sizing:border-box;
+  border-bottom:1px solid #ccc;
+  line-height:1.3;
+  background-color: #fee;
+}
+.accor dd:last-of-type{ border: 0;}
+
+.accor dl i { transition:all 300ms linear; }
+.accor dl.on i { transform: rotate(180deg); }
+
+/* -------------------------------------------------------- */
+
+.accor2 {
+  width: 100%; height: auto;
+  margin:auto; margin-top: 2rem;
+  background-color: #fff;
+}
+
+.accor2 > ul { 
+  width: 100%; height: auto;
+}
+.accor2 li {
+  width: 100%; height:auto;
+  margin-bottom:1rem;
+  /* border:1px solid #777; */
+}
+
+.nav_title {
+  width: 100%; height: auto;
+  padding:0.5rem; box-sizing: border-box;
+}
+.nav_title button {
+  width: 100%; height:auto;
+  padding: 0.3rem; 
+  border-radius:0.1rem;
+  border-bottom:1px solid #333;
+  font-weight: 700;
+  text-indent:1rem;
+  text-align-last: left;
+  background-color: #fff;
+}
+
+
+.sub_list {
+  display: none;
+  width: 100%; height: auto;
+  padding: 0.5rem; box-sizing: border-box;
+}
+.sub_list a {
+  padding: 0.2rem 0.5rem;
+  border-radius:0.1rem;
+  background-color: #fdd;
+}

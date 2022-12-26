@@ -1,0 +1,29 @@
+/* b_03_slide_hofizontal_btn.css */
+
+.code_exam { width:1300px; height:2000px; }
+.ex_wrap { position: relative; }
+h3 { text-align: center; margin-bottom: 20px;}
+
+/* ---------------------------------------------------------------------- */
+.slide {
+  --slide-len:5;
+  overflow: hidden; 
+  width: 800px; height:450px; margin:auto; background-color: #fff; }
+
+.horizontal_slide {position: relative; width:500%; width:calc(100% * var(--slide-len)); height: 100%;}
+.horizontal_slide > div{float:left; width:20%; width: calc(100% / var(--slide-len));  height:450px; }
+/* ------------------------------------------------------------------------- */
+.slide_btn {
+  position: absolute; top: 50%; left: 0; width:100%; height:0; 
+  padding:0 30px; font-size: 8px; box-sizing:border-box; }
+.slide_btn button {width:40px; height:40px; background-color: #ccc; border-radius:10px;}
+.next { float:right; }
+.prev { float:left; }
+
+/* ------------------------------------------------------------------------- */
+
+.slide_con_01 { background-color: #2af; }
+.slide_con_02 { background-color: #777; }
+.slide_con_03 { background-color: #fa4; }
+.slide_con_04 { background-color: #e9c; }
+.slide_con_05 { background-color: #9a7; } 

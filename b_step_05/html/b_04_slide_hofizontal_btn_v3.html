@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- b_04_slide_hofizontal_btn_v2.html -->
+<html lang="ko-KR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap">
+  <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+  
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/b_04_slide_hofizontal_btn_v3.css">
+  <script src="../ie/modernizr-custom.js"></script>
+  
+  <link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  
+  <title>b_04_slide_hofizontal_btn_v2</title>
+</head>
+<body>
+  <!-- layout -->
+<div class="code_exam">
+  <h1><a href="./a_content.html">jQuery 기초</a></h1>
+  <hr />
+  <div class="part">
+    <h2>slide 광고기능 - 가로형이용 배치</h2>
+    <div class="ex_wrap slide_set">
+      <h3>가로형 레이아웃 이용 및 indicator 처리</h3>
+      
+      <div class="slide_btn">
+        <button type="button" class="next">다음내용보기</button>
+        <button type="button" class="prev">이전내용보기</button>
+      </div>
+
+      <div class="indicator">
+        <ul>
+          <li class="action"><a href="#slideT_01"><span class="blind">선택된 광고 01에 대한 내용을 요약 설명</span></a></li>
+          <li><a href="#slideT_02"><span class="blind">선택된 광고 02에 대한 내용을 요약 설명</span></a></li>
+          <li><a href="#slideT_03"><span class="blind">선택된 광고 03에 대한 내용을 요약 설명</span></a></li>
+          <li><a href="#slideT_04"><span class="blind">선택된 광고 04에 대한 내용을 요약 설명</span></a></li>
+          <li><a href="#slideT_05"><span class="blind">선택된 광고 05에 대한 내용을 요약 설명</span></a></li>
+        </ul>
+        <p><em class="now">0</em>/<span class="total">0</span></p>
+      </div>
+
+
+      <div class="slide">
+        <div class="slide_wrapper horizontal_slide">
+          <div id="slideT_01" class="slide_con_01">광고 01</div>
+          <div id="slideT_02" class="slide_con_02">광고 02</div>
+          <div id="slideT_03" class="slide_con_03">광고 03</div>
+          <div id="slideT_04" class="slide_con_04">광고 04</div>
+          <div id="slideT_05" class="slide_con_05">광고 05</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- javascript -->
+  <script src="../js/common/jquery-3.6.0.min.js"></script>
+  <script src="../js/common/jquery-ui.min.js"></script>
+  <script src="../js/src/b_04_slide_hofizontal_btn_v3.js"></script>
+</body>
+</html>

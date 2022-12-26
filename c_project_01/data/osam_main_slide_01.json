@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "gategorie": "public",
+    "title": "사이트 오픈 행사",
+    "contents": "드디어 커피사러 커피샘플을  사러 오삼을 드디어 오픈했습니다. 많은 분들의 성화와 관심에 감사드리며 이번에 새로운 행사를 준비하게 되었습니다.",
+    "summary": "웹페이지 오픈 축하기념 행사안내",
+    "link": "event_site_open.html",
+    "image": "open_image.png",
+    "description": "open_image",
+    "image_use": "hidden",
+    "background": "nature_bg.png"
+  },
+  {
+    "id": 2,
+    "gategorie": "event",
+    "title": "merry christmas",
+    "contents": "12월 크리스마를 맞이하여, 연인, 가족을 위한 카페 이벤트를 개최하였습니다.",
+    "summary": "크리스마스 이벤트 행사",
+    "link": "event_christmas_1st.html",
+    "image": "christmas_1st.png",
+    "description": "christmas_1st",
+    "image_use": "hidden",
+    "background": "christmas_bg.png"
+  },
+  {
+    "id": 3,
+    "gategorie": "news",
+    "title": "추운 겨울 따뜻한 마음을 만들어줄 텀블러",
+    "contents": "누가보더라도 따뜻한 마음을 가질 수 있는 텀블러를 출시하여, 많은 분들께 전해드릴 상품을 소개합니다.",
+    "summary": "텀블러 출시 안내",
+    "link": "news_product_1st.html",
+    "image": "new_tumbler.png",
+    "description": "new_tumbler",
+    "image_use": "hidden",
+    "background": "light_bg.png"
+  },
+  {
+    "id": 4,
+    "gategorie": "news",
+    "title": "신년맞이 원두 출시",
+    "contents": "새해맞이 새로운 원두가 출시되었습니다. 과일향이 듬뿍나고, 마음을 녹여줄 우리의 커피원두를 지금 신청하세요.",
+    "summary": "신상품 원두 소개",
+    "link": "news_coffeeBean_orange.html",
+    "image": "beans_orange.png",
+    "description": "beans_orange",
+    "image_use": "hidden",
+    "background": "beangs_bg.png"
+  }
+]
